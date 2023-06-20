@@ -1,0 +1,70 @@
+BUMPER AND CAMERA NEW
+
+Właściwości masy wybrane komponenty
+     System współrzędnych: Układ współrzędnych1
+
+Środek masy i momenty bezwładności są wyprowadzone w układzie współrzędnych Camera_with_bumper
+Masa = 0.03215073 kilogramy
+
+Objętość = 0.00003215 metry sześcienne
+
+Obszar powierzchni = 0.02166128 metry kwadratowe
+
+Środek masy: ( metry )
+	X = 0.00051670
+	Y = 0.00000000
+	Z = 0.01826834
+
+Osie główne bezwładności i momenty główne bezwładności: ( kilogramy * metry kwadratowe )
+Pobrane w środku ciężkości.
+	 Ix = (-0.00002976, -1.00000000,  0.00001978)   	Px = 0.00001092
+	 Iy = (-0.11249022, -0.00001630, -0.99365283)   	Py = 0.00001205
+	 Iz = ( 0.99365283, -0.00003179, -0.11249022)   	Pz = 0.00001273
+
+Momenty bezwładności: ( kilogramy * metry kwadratowe )
+Mierzony w środku masy i wyrównany z wyjściowym układem współrzędnych. (Korzystanie z dodatniej notacji tensora).
+	Lxx = 0.00001272	Lxy = 0.00000000	Lxz = 0.00000008
+	Lyx = 0.00000000	Lyy = 0.00001092	Lyz = 0.00000000
+	Lzx = 0.00000008	Lzy = 0.00000000	Lzz = 0.00001206
+
+Momenty bezwładności: ( kilogramy * metry kwadratowe )
+Mierzone w wyjściowym układzie współrzędnych. (Korzystanie z dodatniej notacji tensora).
+	Ixx = 0.00002345	Ixy = 0.00000000	Ixz = 0.00000038
+	Iyx = 0.00000000	Iyy = 0.00002166	Iyz = 0.00000000
+	Izx = 0.00000038	Izy = 0.00000000	Izz = 0.00001207
+
+
+CHASSIS
+
+Właściwości masy chassis_rducted_without_top_bumper
+     Konfiguracja: Domyślna
+     System współrzędnych: Układ współrzędnych1
+
+Masa = 0.75203002 kilogramy
+
+Objętość = 0.00035202 metry sześcienne
+
+Obszar powierzchni = 0.20496723 metry kwadratowe
+
+Środek masy: ( metry )
+	X = 0.00013371
+	Y = 0.00016047
+	Z = 0.00735380
+
+Osie główne bezwładności i momenty główne bezwładności: ( kilogramy * metry kwadratowe )
+Pobrane w środku ciężkości.
+	 Ix = ( 0.00028714, -0.99995875,  0.00907807)   	Px = 0.00080393
+	 Iy = (-0.00225577, -0.00907870, -0.99995624)   	Py = 0.00108895
+	 Iz = ( 0.99999741,  0.00026665, -0.00225828)   	Pz = 0.00144970
+
+Momenty bezwładności: ( kilogramy * metry kwadratowe )
+Mierzony w środku masy i wyrównany z wyjściowym układem współrzędnych. (Korzystanie z dodatniej notacji tensora).
+	Lxx = 0.00144969	Lxy = -0.00000018	Lxz = 0.00000082
+	Lyx = -0.00000018	Lyy = 0.00080395	Lyz = -0.00000259
+	Lzx = 0.00000082	Lzy = -0.00000259	Lzz = 0.00108893
+
+Momenty bezwładności: ( kilogramy * metry kwadratowe )
+Mierzone w wyjściowym układzie współrzędnych. (Korzystanie z dodatniej notacji tensora).
+	Ixx = 0.00149038	Ixy = -0.00000016	Ixz = 0.00000155
+	Iyx = -0.00000016	Iyy = 0.00084464	Iyz = -0.00000170
+	Izx = 0.00000155	Izy = -0.00000170	Izz = 0.00108896

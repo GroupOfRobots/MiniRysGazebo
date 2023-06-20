@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <material name="custom_color">
+        <color rgba="$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)"/>
+    </material>
+
+    <material name="dark_red">
+        <color rgba="0.700000 0.000000 0.000000 1.000000"/>
+    </material>
+
+    <material name="purple">
+        <color rgba="0.400000 0.000000 0.800000 1.000000"/>
+    </material>
+
+    <material name="dark_gray">
+        <color rgba="0.200000 0.200000 0.200000 1.000000"/>
+    </material>
+
+    <material name="gray">
+        <color rgba="0.300000 0.300000 0.300000 1.000000"/>
+    </material>
+
+    <material name="black">
+        <color rgba="0.100000 0.100000 0.100000 1.000000"/>
+    </material>
+
+    <material name="lens">
+        <color rgba="0.750000 0.750000 0.800000 0.500000"/>
+    </material>
+
+</robot>

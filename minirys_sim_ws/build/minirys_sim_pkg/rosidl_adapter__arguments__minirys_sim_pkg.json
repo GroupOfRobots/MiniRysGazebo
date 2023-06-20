@@ -1,0 +1,6 @@
+{
+  "package_name": "minirys_sim_pkg",
+  "non_idl_tuples": [
+    "/home/mathew/ROS_files/Workspaces/minirys_sim_ws/src/minirys_sim_pkg:msg/Orders.msg"
+  ]
+}

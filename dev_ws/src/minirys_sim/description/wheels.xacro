@@ -1,0 +1,175 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- LEFT WHEEL LINK -->
+    <joint name="left_wheel_joint" type="continuous">
+        <parent link="chassis"/>
+        <child link="left_wheel"/>
+        <origin xyz="0 ${wheel_separation} 0" rpy="-${pi/2} 0 0"/>
+        <axis xyz="0 0 1"/>
+        <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/>
+    </joint>
+
+    <link name="left_wheel">
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+              <mesh filename="${left_wheel_mesh_path}" scale="1 1 1"/> 
+            </geometry>
+            <material name="${wheel_material}"/>
+        </visual>
+    
+        <collision name='left_wheel_collision'>
+          <origin xyz="0 0 0.007" rpy="0 0 0"/>
+          <geometry>
+            <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>(arg wheel_mu1)</mu>
+                <mu2>(arg wheel_mu2)</mu2>
+              </ode>
+            </friction>
+          </surface>
+        </collision>
+
+        <inertial>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+          <mass value="0.06705622"/>
+          <inertia ixx="0.00006281" ixy="0.0" ixz="0.0" iyy="0.00006281" iyz="0.0" izz="0.00011530"/>
+        </inertial>
+    </link>
+
+    <gazebo reference="left_wheel">
+      <visual>
+          <material>
+              <script>
+                  <uri>${rys_materials_path}</uri>
+                  <name>${gazebo_wheel_material}</name>
+              </script>
+          </material>
+      </visual>
+      <mu1>$(arg wheel_mu1)</mu1>
+      <mu2>$(arg wheel_mu2)</mu2>
+      <!-- <kp>$(arg wheel_kp)</kp> -->
+      <kd>$(arg wheel_kd)</kd>
+      <!-- <gravity>true</gravity> -->
+    </gazebo>
+
+    <!-- LEFT TIRE LINK -->
+
+    <joint name="left_tire_joint" type="fixed">
+        <parent link="left_wheel"/>
+        <child link="left_tire"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="left_tire">
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+              <mesh filename="${left_tire_mesh_path}" scale="1 1 1"/>
+            </geometry>
+            <material name="${tire_material}"/>
+        </visual>
+    </link>
+
+    <gazebo reference="left_tire">
+      <visual>
+          <material>
+              <ambient>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</ambient>
+              <diffuse>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</diffuse>
+              <specular>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</specular>
+              <emissive>0 0 0 1</emissive>
+          </material>
+      </visual>
+    </gazebo>
+
+    <!-- RIGHT WHEEL LINK -->
+
+    <joint name="right_wheel_joint" type="continuous">
+      <parent link="chassis"/>
+      <child link="right_wheel"/>
+      <origin xyz="0 -${wheel_separation} 0" rpy="${pi/2} 0 0"/>
+      <axis xyz="0 0 -1"/>
+      <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/>
+    </joint>
+
+    <link name="right_wheel">
+      <visual>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+          <geometry>
+            <mesh filename="${right_wheel_mesh_path}" scale="1 1 1"/>
+          </geometry>
+          <material name="${wheel_material}"/>
+      </visual>
+
+      <collision name='right_wheel_collision'>
+        <origin xyz="0 0 0.007" rpy="0 0 0"/>
+        <geometry>
+          <cylinder radius="${wheel_radius}" length="${wheel_width}"/>
+        </geometry>
+        <surface>
+          <friction>
+            <ode>
+              <mu>(arg wheel_mu1)</mu>
+              <mu2>(arg wheel_mu2)</mu2>
+            </ode>
+          </friction>
+        </surface>
+      </collision>
+
+      <inertial>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+        <mass value="0.06705622"/>
+        <inertia ixx="0.00006281" ixy="0.0" ixz="0.0" iyy="0.00006281" iyz="0.0" izz="0.00011530"/>
+      </inertial>
+      
+    </link>
+
+    <gazebo reference="right_wheel">
+      <visual>
+          <material>
+              <script>
+                  <uri>${rys_materials_path}</uri>
+                  <name>${gazebo_wheel_material}</name>
+              </script>
+          </material>
+      </visual>
+      <mu1>$(arg wheel_mu1)</mu1>
+      <mu2>$(arg wheel_mu2)</mu2>
+      <!-- <kp>$(arg wheel_kp)</kp> -->
+      <kd>$(arg wheel_kd)</kd>
+      <!-- <gravity>true</gravity> -->
+    </gazebo>
+
+    <!-- RIGHT TIRE LINK -->
+
+    <joint name="right_tire_joint" type="fixed">
+        <parent link="right_wheel"/>
+        <child link="right_tire"/>
+        <origin xyz="0 0 0" rpy="0 0 0"/>
+    </joint>
+
+    <link name="right_tire">
+        <visual>
+          <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+              <mesh filename="${right_tire_mesh_path}" scale="1 1 1"/>
+            </geometry>
+            <material name="${tire_material}"/>
+        </visual>
+    </link>
+
+    <gazebo reference="right_tire">
+      <visual>
+          <material>
+              <ambient>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</ambient>
+              <diffuse>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</diffuse>
+              <specular>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</specular>
+              <emissive>0 0 0 1</emissive>
+          </material>
+      </visual>
+    </gazebo>
+</robot>

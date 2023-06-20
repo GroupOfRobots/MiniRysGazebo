@@ -1,0 +1,4 @@
+source;share/minirys_sim_pkg/environment/ament_prefix_path.sh
+source;share/minirys_sim_pkg/environment/library_path.sh
+source;share/minirys_sim_pkg/environment/path.sh
+source;share/minirys_sim_pkg/environment/pythonpath.sh

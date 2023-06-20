@@ -1,0 +1,205 @@
+import * from "grid.material"
+
+material rys/robot1
+{
+   technique
+   {
+       pass
+       {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot1.png
+            }
+       }
+   }
+}
+
+material rys/robot2
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot2.png
+            }
+        }
+    }
+}
+
+material rys/robot3
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot3.png
+            }
+        }
+    }
+}
+
+material rys/robot4
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot4.png
+            }
+        }
+    }
+}
+
+material rys/robot5
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot5.png
+            }
+        }
+    }
+}
+
+material rys/robot6
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot6.png
+            }
+        }
+    }
+}
+
+material rys/robot7
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot7.png
+            }
+        }
+    }
+}
+
+material rys/robot8
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot8.png
+            }
+        }
+    }
+}
+
+material rys/robot9
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot9.png
+            }
+        }
+    }
+}
+
+material rys/robot10
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot10.png
+            }
+        }
+    }
+}
+
+material rys/robot11
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot11.png
+            }
+        }
+    }
+}
+
+material rys/robot12
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot12.png
+            }
+        }
+    }
+}

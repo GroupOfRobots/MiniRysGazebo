@@ -1,0 +1,32 @@
+In file included from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_c/minirys_sim_pkg/msg/detail/orders__functions.h:19[m[K,
+                 from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_c/minirys_sim_pkg/msg/detail/orders__functions.c:4[m[K:
+[01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_c/minirys_sim_pkg/msg/detail/orders__struct.h:23:10:[m[K [01;31m[Kfatal error: [m[Kminirys_sim_pkg/msg/detail/float__struct.h: No such file or directory
+   23 | #include [01;31m[K"minirys_sim_pkg/msg/detail/float__struct.h"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/minirys_sim_pkg__rosidl_generator_c.dir/build.make:92: CMakeFiles/minirys_sim_pkg__rosidl_generator_c.dir/rosidl_generator_c/minirys_sim_pkg/msg/detail/orders__functions.c.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:469: CMakeFiles/minirys_sim_pkg__rosidl_generator_c.dir/all] Error 2
+make[1]: *** Waiting for unfinished jobs....
+In file included from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_typesupport_cpp/minirys_sim_pkg/msg/orders__type_support.cpp:7[m[K:
+[01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_cpp/minirys_sim_pkg/msg/detail/orders__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kminirys_sim_pkg/msg/detail/float__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"minirys_sim_pkg/msg/detail/float__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/minirys_sim_pkg__rosidl_typesupport_cpp.dir/build.make:73: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_sim_pkg/msg/orders__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:496: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_cpp.dir/all] Error 2
+In file included from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_typesupport_introspection_cpp/minirys_sim_pkg/msg/detail/orders__type_support.cpp:12[m[K:
+[01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_cpp/minirys_sim_pkg/msg/detail/orders__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kminirys_sim_pkg/msg/detail/float__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"minirys_sim_pkg/msg/detail/float__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/minirys_sim_pkg__rosidl_typesupport_introspection_cpp.dir/build.make:78: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_sim_pkg/msg/detail/orders__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:442: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_introspection_cpp.dir/all] Error 2
+In file included from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_typesupport_fastrtps_cpp/minirys_sim_pkg/msg/detail/orders__rosidl_typesupport_fastrtps_cpp.hpp:11[m[K,
+                 from [01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_typesupport_fastrtps_cpp/minirys_sim_pkg/msg/detail/dds_fastrtps/orders__type_support.cpp:4[m[K:
+[01m[K/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg/rosidl_generator_cpp/minirys_sim_pkg/msg/detail/orders__struct.hpp:20:10:[m[K [01;31m[Kfatal error: [m[Kminirys_sim_pkg/msg/detail/float__struct.hpp: No such file or directory
+   20 | #include [01;31m[K"minirys_sim_pkg/msg/detail/float__struct.hpp"[m[K
+      |          [01;31m[K^~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~[m[K
+compilation terminated.
+make[2]: *** [CMakeFiles/minirys_sim_pkg__rosidl_typesupport_fastrtps_cpp.dir/build.make:78: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_sim_pkg/msg/detail/dds_fastrtps/orders__type_support.cpp.o] Error 1
+make[1]: *** [CMakeFiles/Makefile2:298: CMakeFiles/minirys_sim_pkg__rosidl_typesupport_fastrtps_cpp.dir/all] Error 2
+make: *** [Makefile:141: all] Error 2

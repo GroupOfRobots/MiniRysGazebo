@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- LABEL -->
+    <joint name="label_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="label"/>
+        <origin xyz="0.0 0.0 ${label_hight}" rpy="0 0 0"/>
+    </joint>
+    
+    <link name="label">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                    <box size="0.0001 $(arg label_x) $(arg label_y)"/>
+            </geometry>
+            <material name="rys/white"/>
+        </visual>
+    </link> 
+
+    <gazebo reference="label">
+        <visual>
+            <material>
+                <script>
+                    <uri>${rys_textures_path}</uri>
+                    <name>rys/$(arg robot_namespace)</name>
+                </script>
+            </material>
+        </visual>
+    </gazebo>
+
+</robot>

@@ -1,0 +1,88 @@
+import * from "grid.material"
+
+material rys/lens
+{
+   technique
+   {
+       pass
+       {
+           scene_blend alpha_blend
+           depth_write off
+           lighting off
+
+           texture_unit
+           {
+               colour_op_ex source1 src_manual src_current 0.75 0.75 0.8
+               alpha_op_ex source1 src_manual src_current 0.3
+           }
+       }
+   }
+}
+
+material rys/red
+{
+   technique
+   {
+       pass
+       {
+           ambient 1.00 0.20 0.20
+           diffuse 0.60 0.00 0.00
+           specular 0.40 0.40 0.40 1.00 5.00
+       }
+   }
+}
+
+material rys/purple
+{
+   technique
+   {
+       pass
+       {
+           ambient 0.40 0.00 0.80
+           diffuse 0.00 0.00 0.50
+           specular 0.40 0.40 0.40 1.00 5.00
+       }
+   }
+}
+
+
+material rys/dark_gray
+{
+   technique
+   {
+       pass
+       {
+           ambient 0.20 0.20 0.20
+           diffuse 0.20 0.20 0.20
+           specular 0.40 0.40 0.40 1.00 5.00
+       }
+   }
+}
+
+material rys/light_gray
+{
+   technique
+   {
+       pass
+       {
+           ambient 0.50 0.50 0.50
+           diffuse 0.75 0.75 0.75
+           specular 0.90 0.90 0.90 50.00 50.00
+       }
+   }
+}
+
+material rys/black
+{
+   technique
+   {
+       pass
+       {
+           ambient 0.10 0.10 0.10
+           diffuse 0.10 0.10 0.10
+           specular 0.40 0.40 0.40 1.00 5.00
+       }
+   }
+}
+
+</robot>

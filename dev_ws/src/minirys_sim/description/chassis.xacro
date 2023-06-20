@@ -1,0 +1,163 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    <!-- BASE LINK -->
+        <!-- <link name="base_footprint"></link> -->
+        <link name="base_link"></link>
+
+        <!-- <joint name="base_footprint_joint" type="fixed">
+            <parent link="base_link"/>
+            <child link="base_footprint"/>
+            <origin xyz="0 0 -${wheel_radius}"/>  
+        </joint>
+     -->
+    <!-- SKELETON LINK -->
+
+        <joint name="chassis_joint" type="fixed">
+            <parent link="base_link"/>
+            <child link="chassis"/>
+            <origin xyz="0 0 0"/>
+        </joint>
+
+        <link name="chassis">
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="${skeleton_mesh_path}" scale="1 1 1"/>
+                </geometry>
+                <material name="${skeleton_material}"/>
+            </visual>
+
+            <!-- COLISION -->
+            <collision name='chassis_box'>
+                <origin xyz="0 0 0.0385" rpy="0 0 0"/>
+                <geometry>
+                    <box size="0.07 0.116 0.13"/>
+                </geometry>
+            </collision>
+                
+            <collision name='side_bumper'>
+                <origin xyz="0 0 0.09" rpy="0 0 0"/>
+                <geometry>
+                    <cylinder radius="0.056" length="0.01"/>
+                </geometry>
+            </collision>
+
+            <collision name='lower_battery'>
+                <origin xyz="0 0 -0.034" rpy="${pi/2} 0 0"/>
+                <geometry>
+                    <cylinder radius="0.01" length="0.071"/>
+                </geometry>
+            </collision>
+            
+            <inertial>
+                <origin xyz="0 0 0" rpy="0 0 0"/>
+                <mass value="0.75202927"/>
+                <inertia ixx="0.00149038" ixy="-0.00000016" ixz="0.00000155" 
+                         iyy="0.00084463" iyz="-0.00000170" izz="0.00108896"/>
+            </inertial>
+        </link>
+
+        <gazebo reference="chassis">
+            <visual>
+                <material>
+                    <script>
+                        <uri>${rys_materials_path}</uri>
+                        <name>${gazebo_skeleton_material}</name>
+                    </script>
+                </material>
+            </visual>
+            <mu1>$(arg chassis_mu1)</mu1>
+            <mu2>$(arg chassis_mu2)</mu2>
+            <kp>$(arg chassis_kp)</kp>
+            <kd>$(arg chassis_kd)</kd>
+            <selfCollide>false</selfCollide>
+            <gravity>true</gravity>
+        </gazebo>
+
+    <!-- VISUAL LINKS -->
+        <!-- FRONTS -->
+        <joint name="fronts_joint" type="fixed">
+            <parent link="chassis"/>
+            <child link="fronts"/>
+            <origin xyz="0 0 0"/>
+        </joint>
+
+        <link name="fronts">
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="${fronts_mesh_path}" scale="1 1 1"/>
+                </geometry>
+                <material name="${fronts_material}"/>
+            </visual>
+        </link>
+
+        <gazebo reference="fronts">
+            <visual>
+                <material>
+                    <ambient>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</ambient>
+                    <diffuse>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</diffuse>
+                    <specular>$(arg color_code_R) $(arg color_code_G) $(arg color_code_B) $(arg color_code_A)</specular>
+                    <emissive>0 0 0 1</emissive>
+                </material>
+            </visual>
+        </gazebo>
+
+        <!-- INTERNAL COMPONENTS -->
+        <joint name="internal_components_joint" type="fixed">
+            <parent link="chassis"/>
+            <child link="internal_components"/>
+            <origin xyz="0 0 0"/>
+        </joint>
+    
+        <link name="internal_components">
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="${internal_components_mesh_path}" scale="1 1 1"/>
+                </geometry>
+                <material name="${internal_components_material}"/>
+            </visual>
+        </link>
+
+        <gazebo reference="internal_components">
+            <visual>
+                <material>
+                    <script>
+                        <uri>${rys_materials_path}</uri>
+                        <name>${gazebo_internal_components_material}</name>
+                    </script>
+                </material>
+            </visual>
+        </gazebo>
+
+        <!-- BATTERIES -->
+        <joint name="batteries_joint" type="fixed">
+            <parent link="chassis"/>
+            <child link="batteries"/>
+            <origin xyz="0 0 0"/>
+        </joint>
+    
+        <link name="batteries">
+            <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+                <geometry>
+                    <mesh filename="${batteries_mesh_path}" scale="1 1 1"/>
+                </geometry>
+                <material name="${batteries_material}"/>
+            </visual>
+        </link>
+
+        <gazebo reference="batteries">
+            <visual>
+                <material>
+                    <script>
+                        <uri>${rys_materials_path}</uri>
+                        <name>${gazebo_batteries_material}</name>
+                    </script>
+                </material>
+            </visual>
+        </gazebo>
+
+</robot>

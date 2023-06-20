@@ -1,0 +1,150 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+    
+    <!-- UPPER SENSOR -->
+  
+    <joint name="upper_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="upper_tof_frame"/>
+        <origin xyz="-0.0004 -0.04045 0.095" rpy="0 -${pi/2} 0"/>
+    </joint>
+
+    <link name="upper_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004"/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+
+    <xacro:gazebo_single_tof_sensor frame="upper_tof_frame" 
+                                    name="upper_tof" 
+                                    on="true" 
+                                    visible="${up_down_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+    
+    <!-- LOWER SENSOR -->
+  
+    <joint name="lower_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="lower_tof_frame"/>
+        <origin xyz="0.0207 0 -0.0235" rpy="0 ${pi/2} 0"/>
+    </joint>
+
+    <link name="lower_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004 "/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+    
+    <xacro:gazebo_single_tof_sensor frame="lower_tof_frame" 
+                                    name="lower_tof" 
+                                    on="true" 
+                                    visible="${up_down_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+
+    <!-- LEFT SENSOR -->
+  
+    <joint name="left_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="left_tof_frame"/>
+        <origin xyz="0 0.051 0.0622" rpy="0 0 ${pi/2}"/>
+    </joint>
+
+    
+    <link name="left_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004"/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+
+    <xacro:gazebo_single_tof_sensor frame="left_tof_frame" 
+                                    name="left_tof" 
+                                    on="true" 
+                                    visible="${right_left_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+
+    <!-- RIGHT SENSOR -->
+
+    <joint name="right_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="right_tof_frame"/>
+        <origin xyz="-0.01595 -0.051 0.05914" rpy="0 0 -${pi/2}"/>
+    </joint>
+
+    <link name="right_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004"/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+
+    <xacro:gazebo_single_tof_sensor frame="right_tof_frame" 
+                                    name="right_tof" 
+                                    on="true" 
+                                    visible="${right_left_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+    
+    
+    <!-- FRONT SENSOR -->
+  
+    <joint name="front_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="front_tof_frame"/>
+        <origin xyz="0.031 0.0001 0.06125" rpy="0 0 0"/>
+    </joint>
+    
+    <link name="front_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004"/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+
+    <xacro:gazebo_single_tof_sensor frame="front_tof_frame" 
+                                    name="front_tof" 
+                                    on="true" 
+                                    visible="${front_back_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+    
+    <!-- BACK SENSOR -->
+  
+    <joint name="back_tof_joint" type="fixed">
+        <parent link="chassis"/>
+        <child link="back_tof_frame"/>
+        <origin xyz="-0.031 0 0.0612" rpy="0 0 ${pi}"/>
+    </joint>
+
+    <link name="back_tof_frame">
+        <visual>
+            <origin xyz="0 0 0" rpy="0 0 0"/>
+            <geometry>
+                <box size="0.002 0.002 0.004"/>
+            </geometry>
+            <material name="${tof_material}"/>
+        </visual>
+    </link>
+    
+    <xacro:gazebo_single_tof_sensor frame="back_tof_frame" 
+                                    name="back_tof" 
+                                    on="true" 
+                                    visible="${front_back_sensor_visibility}"
+                                    material="${gazebo_tof_material}"/>
+    
+</robot>

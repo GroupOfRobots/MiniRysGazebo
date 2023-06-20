@@ -1,0 +1,78 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
+
+
+    <!-- ARGUMENTS -->
+        <!-- VISUALS -->
+        <xacro:arg name="color_code" default="dark_red"/>
+        <xacro:arg name="color_code_R" default="1.0"/>
+        <xacro:arg name="color_code_G" default="1.0"/>
+        <xacro:arg name="color_code_B" default="1.0"/>
+        <xacro:arg name="color_code_A" default="1.0"/>
+
+
+        <xacro:arg name="label_enabled" default="true"/>
+        <xacro:arg name="label_x" default="0.13"/> <!--0.13-->
+        <xacro:arg name="label_y" default="0.05"/> <!--0.05-->
+            <!-- SENSORS -->
+            <xacro:arg name="horizontal_sensor_visibility" default="false"/>
+            <xacro:arg name="vertical_sensor_visibility" default="false"/>
+            <xacro:arg name="all_sensor_visibility" default="false"/>
+            <xacro:arg name="none_sensor_visibility" default="true"/>
+
+        <!-- PHYSICS -->
+        <xacro:arg name="chassis_mu1" default="0.1"/> <!--SURFACE FRICTION-->
+        <xacro:arg name="chassis_mu2" default="0.1"/> <!--SURFACE FRICTION-->
+        <xacro:arg name="chassis_kp" default="0.7"/>  <!--STIFFNESS-->
+        <xacro:arg name="chassis_kd" default="0.05"/> <!--DAMPING-->
+        
+        <xacro:arg name="wheel_mu1" default="10"/>    <!--SURFACE FRICTION-->
+        <xacro:arg name="wheel_mu2" default="10"/>    <!--SURFACE FRICTION-->
+        <xacro:arg name="wheel_kp" default="0.7"/>      <!--STIFFNESS-->
+        <xacro:arg name="wheel_kd" default="0.05"/>      <!--DAMPING-->
+
+        <xacro:arg name="wheel_joint_dumping" default="0.01"/> <!--JOINT DAMPING-->
+        <xacro:arg name="wheel_joint_friction" default="0.1"/> <!--JOINT FRICTION-->
+        
+        <!-- ROS -->
+        <xacro:arg name="robot_namespace" default="robot"/>
+        <xacro:arg name="package_path" default=""/>
+        
+        <!-- SENSORS -->
+        <xacro:arg name="horizontal_sensor_visibility" default="false"/>
+        <xacro:arg name="vertical_sensor_visibility" default="false"/>
+        <xacro:arg name="all_sensor_visibility" default="false"/>
+        <xacro:arg name="none_sensor_visibility" default="true"/>
+        <xacro:arg name="camera_visibility" default="false"/>
+        
+        <xacro:arg name="camera_enabled" default="true"/>
+        <xacro:arg name="TOF_FOV_angle" default="0.001"/> <!--FOV - Field of View-->
+        <xacro:arg name="TOF_range" default="2"/>
+        <xacro:arg name="TOF_enabled" default="false"/>
+
+    <!-- INCLUDE -->
+        <!-- CONFIG -->
+            <xacro:include filename="materials.xacro"/>
+            <xacro:include filename="variables.xacro"/>
+        <!-- MACRO -->
+            <xacro:include filename="macros.xacro"/>        
+        <!-- ROBOT -->
+            <!-- <xacro:include filename="ros2_control_gazebo.xacro"/> -->
+            <xacro:include filename="diff_control.xacro"/>
+
+            <xacro:include filename="chassis.xacro"/>
+            <xacro:include filename="wheels.xacro"/>
+
+            <xacro:if value="$(arg label_enabled)">
+                <xacro:include filename="label.xacro"/>
+            </xacro:if>
+            
+            <xacro:if value="$(arg TOF_enabled)">
+                <xacro:include filename="tof_sensors.xacro"/>
+            </xacro:if>     
+
+            <xacro:if value="$(arg camera_enabled)">
+                <xacro:include filename="camera.xacro"/>
+            </xacro:if>
+
+</robot>

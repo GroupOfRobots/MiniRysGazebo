@@ -1,0 +1,58 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+    
+    <xacro:macro name="gazebo_single_tof_sensor" params="frame name on visible material">
+        <gazebo reference="${frame}">
+            <sensor name="${name}" type="ray">
+                <always_on>${on}</always_on>
+                <visualize>${visible}</visualize>
+                <pose>0.0 0 0.0 0 0 0</pose>
+                <update_rate>20</update_rate>
+                <ray>
+                    <scan>
+                        <horizontal>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>${-$(arg TOF_FOV_angle)/2}</min_angle>
+                            <max_angle>${$(arg TOF_FOV_angle)/2}</max_angle>
+                        </horizontal>
+                        <vertical>
+                            <samples>5</samples>
+                            <resolution>1.0</resolution>
+                            <min_angle>${-$(arg TOF_FOV_angle)/2}</min_angle>
+                            <max_angle>${$(arg TOF_FOV_angle)/2}</max_angle>
+                        </vertical>
+                    </scan>
+                    <range>
+                        <min>0.02</min>
+                        <max>$(arg TOF_range)</max>
+                        <resolution>0.01</resolution>
+                    </range>
+                    <noise>
+                        <type>gaussian</type>
+                        <mean>0.0</mean>
+                        <stddev>0.01</stddev>
+                    </noise>
+                </ray>
+                <plugin name="gazebo_ray" filename="libgazebo_ros_ray_sensor.so">
+                    <ros>
+                        <namespace>/$(arg robot_namespace)/distance</namespace>
+                        <remapping>~/out:=${name}</remapping>
+                    </ros>
+                    <output_type>sensor_msgs/Range</output_type>
+                    <radiation_type>ultrasound</radiation_type>
+                    <frame_name>${frame}</frame_name>
+                </plugin>
+            </sensor>
+            <visual>
+                <material>
+                    <script>
+                        <uri>${rys_materials_path}</uri>
+                        <name>${material}</name>
+                    </script>
+                </material>
+            </visual>
+        </gazebo>
+    </xacro:macro>
+</robot>

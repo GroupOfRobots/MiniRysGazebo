@@ -1,0 +1,25 @@
+<?xml version='1.0' encoding='utf-8'?>
+<spawn_modes>
+    <spawn_parameters mode="row_spawn_parameters">
+        <robots_number>2</robots_number>
+        <number_of_rows>1</number_of_rows>
+        <x_separation>1.0</x_separation>
+        <y_separation>0.0</y_separation>
+        <z_separation>0.0</z_separation>
+        <roll>0.0</roll>
+        <pitch>0.0</pitch>
+        <yaw>1.570796327</yaw>
+    </spawn_parameters>
+    <param_to_change>
+        <value>wheel_mu1</value>
+        <value>wheel_mu2</value>
+    </param_to_change>
+    <start_from>
+        <value>1.0</value>
+        <value>1.0</value>
+    </start_from>
+    <iterate_by>
+        <value>2.0</value>
+        <value>2.0</value>
+    </iterate_by>
+</spawn_modes>
