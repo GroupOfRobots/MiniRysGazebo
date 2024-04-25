@@ -24,6 +24,10 @@
     <material name="black">
         <color rgba="0.100000 0.100000 0.100000 1.000000"/>
     </material>
+    
+    <material name="white">
+        <color rgba="0.900000 0.900000 0.900000 1.000000"/>
+    </material>
 
     <material name="lens">
         <color rgba="0.750000 0.750000 0.800000 0.500000"/>

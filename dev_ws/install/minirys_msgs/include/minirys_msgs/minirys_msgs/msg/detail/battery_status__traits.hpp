@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_cpp/minirys_msgs/msg/detail/battery_status__traits.hpp

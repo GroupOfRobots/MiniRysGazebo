@@ -44,7 +44,10 @@ install(
 # Install Python Scripts
 install(
   PROGRAMS
-    scripts/robot_menager_node.py
+    scripts/relay_node.py
+    scripts/cmd_translator_node.py
+    scripts/odom_translator_node.py
+    scripts/monitor_node.py
   DESTINATION lib/${PROJECT_NAME}
 )
 

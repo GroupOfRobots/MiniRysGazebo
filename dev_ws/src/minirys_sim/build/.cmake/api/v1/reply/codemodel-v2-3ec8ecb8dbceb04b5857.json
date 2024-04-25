@@ -1,0 +1,213 @@
+{
+	"configurations" : 
+	[
+		{
+			"directories" : 
+			[
+				{
+					"build" : ".",
+					"childIndexes" : 
+					[
+						1
+					],
+					"hasInstallRule" : true,
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"projectIndex" : 0,
+					"source" : ".",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				},
+				{
+					"build" : "minirys_sim__py",
+					"minimumCMakeVersion" : 
+					{
+						"string" : "3.10.2"
+					},
+					"parentIndex" : 0,
+					"projectIndex" : 0,
+					"source" : "build/minirys_sim__py",
+					"targetIndexes" : 
+					[
+						2
+					]
+				}
+			],
+			"name" : "Debug",
+			"projects" : 
+			[
+				{
+					"directoryIndexes" : 
+					[
+						0,
+						1
+					],
+					"name" : "minirys_sim",
+					"targetIndexes" : 
+					[
+						0,
+						1,
+						2,
+						3,
+						4,
+						5,
+						6,
+						7,
+						8,
+						9,
+						10,
+						11,
+						12,
+						13,
+						14,
+						15
+					]
+				}
+			],
+			"targets" : 
+			[
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim-Debug-cd46b7c6646479809628.json",
+					"name" : "minirys_sim",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__cpp-Debug-afdde57def725f4a58bc.json",
+					"name" : "minirys_sim__cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 1,
+					"id" : "minirys_sim__py::@d2878904d002f12e01d0",
+					"jsonFile" : "target-minirys_sim__py-Debug-82294a8738c9fac1b7d4.json",
+					"name" : "minirys_sim__py",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__python::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__python-Debug-b295740230041e840e6b.json",
+					"name" : "minirys_sim__python",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_generator_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_generator_c-Debug-a29b1d6390fb16daa8e2.json",
+					"name" : "minirys_sim__rosidl_generator_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_c-Debug-771b67ae0f055768a890.json",
+					"name" : "minirys_sim__rosidl_typesupport_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_c__pyext-Debug-84f962a39bf5da659991.json",
+					"name" : "minirys_sim__rosidl_typesupport_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_cpp-Debug-7ac7dfbfad4d2f2019b5.json",
+					"name" : "minirys_sim__rosidl_typesupport_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_fastrtps_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_fastrtps_c-Debug-9dfa300e4e30f384583f.json",
+					"name" : "minirys_sim__rosidl_typesupport_fastrtps_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_fastrtps_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_fastrtps_c__pyext-Debug-795c61bad304cb2483f8.json",
+					"name" : "minirys_sim__rosidl_typesupport_fastrtps_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_fastrtps_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_fastrtps_cpp-Debug-b8619c94b496d36ab7f9.json",
+					"name" : "minirys_sim__rosidl_typesupport_fastrtps_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_introspection_c::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_introspection_c-Debug-13991bdafa21719beb94.json",
+					"name" : "minirys_sim__rosidl_typesupport_introspection_c",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_introspection_c__pyext::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_introspection_c__pyext-Debug-28b3cdcca51ca8db35d2.json",
+					"name" : "minirys_sim__rosidl_typesupport_introspection_c__pyext",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim__rosidl_typesupport_introspection_cpp::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim__rosidl_typesupport_introspection_cpp-Debug-9cc37cbc86428b12783f.json",
+					"name" : "minirys_sim__rosidl_typesupport_introspection_cpp",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "minirys_sim_uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-minirys_sim_uninstall-Debug-c52cb9a77b7e7a2630fc.json",
+					"name" : "minirys_sim_uninstall",
+					"projectIndex" : 0
+				},
+				{
+					"directoryIndex" : 0,
+					"id" : "uninstall::@6890427a1f51a3e7e1df",
+					"jsonFile" : "target-uninstall-Debug-7f634277629ca0de2934.json",
+					"name" : "uninstall",
+					"projectIndex" : 0
+				}
+			]
+		}
+	],
+	"kind" : "codemodel",
+	"paths" : 
+	{
+		"build" : "/home/mathew/dev_ws/src/minirys_sim/build",
+		"source" : "/home/mathew/dev_ws/src/minirys_sim"
+	},
+	"version" : 
+	{
+		"major" : 2,
+		"minor" : 0
+	}
+}

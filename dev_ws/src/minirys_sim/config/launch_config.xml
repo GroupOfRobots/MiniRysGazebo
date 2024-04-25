@@ -1,25 +1,30 @@
 <?xml version='1.0' encoding='utf-8'?>
 <spawn_modes>
     <spawn_parameters mode="row_spawn_parameters">
-        <robots_number>2</robots_number>
+        <robots_number>3</robots_number>
         <number_of_rows>1</number_of_rows>
+        <gazebo_world>empty.world</gazebo_world>
+        <use_gradient_color>False</use_gradient_color>
+        <randomize_colors>True</randomize_colors>
+        <gradient_starting_color>#000003</gradient_starting_color>
+        <gradient_color_step>#00008C</gradient_color_step>
         <x_separation>1.0</x_separation>
         <y_separation>0.0</y_separation>
         <z_separation>0.0</z_separation>
+        <x_offset>1.0</x_offset>
+        <y_offset>-2.0</y_offset>
+        <z_offset>0.056</z_offset>
         <roll>0.0</roll>
-        <pitch>0.0</pitch>
+        <pitch>0.04</pitch>
         <yaw>1.570796327</yaw>
     </spawn_parameters>
     <param_to_change>
-        <value>wheel_mu1</value>
-        <value>wheel_mu2</value>
+
     </param_to_change>
     <start_from>
-        <value>1.0</value>
-        <value>1.0</value>
+
     </start_from>
     <iterate_by>
-        <value>2.0</value>
-        <value>2.0</value>
+
     </iterate_by>
-</spawn_modes>
+    </spawn_modes>

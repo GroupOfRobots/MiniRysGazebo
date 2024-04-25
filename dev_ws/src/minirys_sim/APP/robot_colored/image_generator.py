@@ -5,28 +5,24 @@ import re
 import pathlib
 
 
-def is_yellow(pixel):
+def is_green(pixel):
     r, g, b, a = pixel
-    return 30 <= r <= 255 and 30 <= g <= 255 and 0 <= b <= 25
+    return  r < g and b < g
 
-def isolate_yellow(img):
+def isolate_green(img):
     img_data = img.load()
     for y in range(img.height):
         for x in range(img.width):
-            if is_yellow(img_data[x, y]):
-                continue
-            else:
+            if not is_green(img_data[x, y]):
                 img_data[x, y] = (0, 0, 0, 0)
     return img
 
-def delete_yellow(img):
+def delete_green(img):
     img_data = img.load()
     for y in range(img.height):
         for x in range(img.width):
-            if is_yellow(img_data[x, y]):
+            if is_green(img_data[x, y]):
                 img_data[x, y] = (0, 0, 0, 0)
-            else:
-                continue
     return img
 
 def normalize_pixels(img):
@@ -42,8 +38,6 @@ def normalize_pixels(img):
             brightness = max(r, g, b)
             if brightness > max_brightness:
                 max_brightness = brightness
-
-    # print(f"max_brightness = {max_brightness}")
 
     # Normalize the image
     for y in range(img.height):
@@ -78,28 +72,19 @@ def generate_solid_color_image(width, height, color):
     color_255 = tuple(int(c) for c in color[:3]) + (255,)
     return Image.new("RGBA", (width, height), color_255)
 
-def parse_xml_to_colors(file_path):
+import xml.etree.ElementTree as ET
+
+def parse_xml_to_color_code(file_path):
     tree = ET.parse(file_path)
     root = tree.getroot()
 
-    robot_color_name = []
-    robot_RGB = []
-    robot_options_name_list  = {"color_code": str, 
-                                "color_code_R": float, 
-                                "color_code_G": float, 
-                                "color_code_B": float, 
-                                "color_code_A": float}
-
-    for option_name, option_type in robot_options_name_list.items():
-        element = root.find(option_name)
-        if element is not None:
-            value = element.text
-            if option_type == float:
-                robot_RGB.append(float(value)) 
-            elif option_type == str:
-                robot_color_name = str(value)
-    # print(robot_color_name, robot_RGB)
-    return robot_color_name, robot_RGB
+    element = root.find('color_code')
+    if element is not None:
+        color_code = element.text
+        return color_code
+    else:
+        print("color_code not found in the XML")
+        return None
 
 def atoi(text):
     return int(text) if text.isdigit() else text
@@ -109,7 +94,6 @@ def natural_keys(text):
 
 def load_data(robot_config_path):
     robot_color_name_list = []
-    robot_RGB_list = []
 
     file_list = sorted(os.listdir(robot_config_path), key=natural_keys)
     # print(file_list)
@@ -117,11 +101,10 @@ def load_data(robot_config_path):
         if re.match(r"^robot\d+_config.xml$", file):
             print(f"Loading color data form {file}")
             file_path = os.path.join(robot_config_path, file)
-            robot_color_name, robot_RGB = parse_xml_to_colors(file_path)
+            robot_color_name = parse_xml_to_color_code(file_path)
             robot_color_name_list.append(robot_color_name)
-            robot_RGB_list.append(robot_RGB)
 
-    return robot_color_name_list, robot_RGB_list
+    return robot_color_name_list
 
 def crop_sides(img, left_crop, right_crop, top_crop, bottom_crop):
     width, height = img.size
@@ -162,10 +145,18 @@ def load_or_generate_image(file_path, generate_func, *args, **kwargs):
         img = generate_func(*args, **kwargs)
         img.save(file_path)
         return img
-    
+
+def hex_to_rgba(hex_string):
+    hex_string = hex_string.lstrip('#')
+    if len(hex_string) != 6:
+        raise ValueError("[SIM ERROR] 01 Input hexadecimal is not in correct format")
+    red, green, blue = (int(hex_string[i:i+2], 16) for i in (0, 2, 4))
+
+    return red, green, blue
+   
 if __name__ == "__main__":
     package_path = os.path.abspath(__file__).replace("APP/robot_colored/image_generator.py", "")
-    input_image_path = f"{package_path}/APP/robot_colored/input.png"
+    input_image_path = f"{package_path}/APP/robot_colored/input5.png"
     print("\n##################### IMAGE GENERATION STARTED #####################")
     print("#### PROCESSING DATA...")
     img = Image.open(input_image_path).convert("RGBA")
@@ -175,20 +166,24 @@ if __name__ == "__main__":
     if not output_directory_path.exists():
         output_directory_path.mkdir(parents=True)
 
-    img_shadows = load_or_generate_image(output_directory_path / "shadows.png", isolate_yellow, img.copy())
-    img_mask = load_or_generate_image(output_directory_path / "mask.png", delete_yellow, img.copy())
+    img_shadows = load_or_generate_image(output_directory_path / "shadows.png", isolate_green, img.copy())
+    img_mask = load_or_generate_image(output_directory_path / "mask.png", delete_green, img.copy())
 
     greyscale_image = load_or_generate_image(output_directory_path / "greyscale_shadows.png", convert_to_greyscale_with_alpha, img_shadows)
     img_normalized = load_or_generate_image(output_directory_path / "normalized_shadows.png", normalize_pixels, greyscale_image.convert("RGBA"))
     
-    robot_color_name_list, robot_RGB_list = load_data(f"{package_path}config/robots/")
+    robot_RGB_list = []
+    robot_color_name_list = load_data(f"{package_path}config/robots/")
+    for i in range(len(robot_color_name_list)):
+        red, green, blue = hex_to_rgba(robot_color_name_list[i])
+        robot_RGB_list.append((red, green, blue))
+        
     folder_path = f"{package_path}/APP/robot_colored/robots"
     delete_missing(folder_path, robot_color_name_list)
 
     colored_images = []
     for i in range(len(robot_RGB_list)):
         img = generate_solid_color_image(width, height, robot_RGB_list[i])
-        # img.save(f"output/{robot_color_name_list[i]}_solid.png")
         colored_images.append(img)
     
     
@@ -206,8 +201,6 @@ if __name__ == "__main__":
         
         multiplied_img = multiply_images(img_normalized, colored_images[i])
         final_img = add_images(multiplied_img, img_mask)
-        # multiplied_img.save(f"output/{robot_color_name_list[i]}_multiplied.png")
-        # final_img.save(f"output/{robot_color_name_list[i]}_final.png")
         cropped_image = crop_sides(final_img, 300, 300, 0, 0)
         cropped_image.save(os.path.join(result_path, output_image_name))
     print("##################### IMAGE GENERATION COMPLETED #####################\n")

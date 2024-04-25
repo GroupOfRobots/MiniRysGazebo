@@ -1,0 +1,3 @@
+Invoking command in '/home/mathew/dev_ws/build/data_monitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/data_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/data_monitor
+Invoked command in '/home/mathew/dev_ws/build/data_monitor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/data_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/data_monitor
+Invoking command in '/home/mathew/dev_ws/build/data_monitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mathew/dev_ws/build/data_monitor -- -j16 -l16

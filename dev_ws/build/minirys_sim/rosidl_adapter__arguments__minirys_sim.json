@@ -1,0 +1,7 @@
+{
+  "package_name": "minirys_sim",
+  "non_idl_tuples": [
+    "/home/mathew/dev_ws/src/minirys_sim:srv/OdomService.srv",
+    "/home/mathew/dev_ws/src/minirys_sim:srv/CloseMenager.srv"
+  ]
+}

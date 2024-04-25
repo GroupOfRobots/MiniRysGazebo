@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<robot_config>
+    <robot_namespace>robot3</robot_namespace>
+    <color_code>#219cf3</color_code>
+    <camera_enabled>true</camera_enabled>
+    <camera_visibility>false</camera_visibility>
+    <label_enabled>true</label_enabled>
+    <label_x>0.13</label_x>
+    <label_y>0.05</label_y>
+    <TOF_enabled>false</TOF_enabled>
+    <horizontal_sensor_visibility>false</horizontal_sensor_visibility>
+    <vertical_sensor_visibility>false</vertical_sensor_visibility>
+    <all_sensor_visibility>false</all_sensor_visibility>
+    <TOF_FOV_angle>0.08</TOF_FOV_angle>
+    <TOF_range>5</TOF_range>
+    <spawn_x>2.0</spawn_x>
+    <spawn_y>-2.0</spawn_y>
+    <spawn_z>0.056</spawn_z>
+    <spawn_roll>0.0</spawn_roll>
+    <spawn_pitch>0.04</spawn_pitch>
+    <spawn_yaw>1.570796327</spawn_yaw>
+    <chassis_mu1>0.0</chassis_mu1>
+    <chassis_mu2>0.0</chassis_mu2>
+    <chassis_kp>10000000.0</chassis_kp>
+    <chassis_kd>1.0</chassis_kd>
+    <wheel_mu1>10.0</wheel_mu1>
+    <wheel_mu2>10.0</wheel_mu2>
+    <wheel_kp>10000000.0</wheel_kp>
+    <wheel_kd>1.0</wheel_kd>
+    <wheel_joint_dumping>0.0001</wheel_joint_dumping>
+    <wheel_joint_friction>0.0001</wheel_joint_friction>
+    <chassis_mx>0.0</chassis_mx>
+    <chassis_my>0.0</chassis_my>
+    <chassis_mz>0.015152</chassis_mz>
+    <chassis_ixx>0.002829167</chassis_ixx>
+    <chassis_ixy>0.0</chassis_ixy>
+    <chassis_ixz>0.0</chassis_ixz>
+    <chassis_iyy>0.002829167</chassis_iyy>
+    <chassis_iyz>0.0</chassis_iyz>
+    <chassis_izz>0.3625</chassis_izz>
+    <wheels_ixx>0.00013418</wheels_ixx>
+    <wheels_ixy>0.0</wheels_ixy>
+    <wheels_ixz>0.0</wheels_ixz>
+    <wheels_iyy>0.00013418</wheels_iyy>
+    <wheels_iyz>0.0</wheels_iyz>
+    <wheels_izz>0.00026198</wheels_izz>
+</robot_config>

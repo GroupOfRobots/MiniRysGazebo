@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/build/minirys_msgs/ament_cmake_core/minirys_msgsConfig.cmake

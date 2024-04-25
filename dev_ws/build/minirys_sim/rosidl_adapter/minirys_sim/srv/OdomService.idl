@@ -1,0 +1,27 @@
+// generated from rosidl_adapter/resource/srv.idl.em
+// with input from minirys_sim/srv/OdomService.srv
+// generated code does not contain a copyright notice
+
+
+module minirys_sim {
+  module srv {
+    struct OdomService_Request {
+      string robot_namespace;
+    };
+    struct OdomService_Response {
+      double x;
+
+      double y;
+
+      double z;
+
+      double roll;
+
+      double pitch;
+
+      double yaw;
+
+      boolean success;
+    };
+  };
+};

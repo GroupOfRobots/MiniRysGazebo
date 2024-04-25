@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_py/minirys_msgs/msg/_motor_driver_status.py

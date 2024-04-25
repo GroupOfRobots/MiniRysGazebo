@@ -1,0 +1,515 @@
+[0.000000] (-) TimerEvent: {}
+[0.000084] (data_monitor) JobQueued: {'identifier': 'data_monitor', 'dependencies': OrderedDict()}
+[0.000106] (gazebo_minirys_sim) JobQueued: {'identifier': 'gazebo_minirys_sim', 'dependencies': OrderedDict()}
+[0.000122] (minirys_msgs) JobQueued: {'identifier': 'minirys_msgs', 'dependencies': OrderedDict()}
+[0.000135] (minirys_sim) JobQueued: {'identifier': 'minirys_sim', 'dependencies': OrderedDict()}
+[0.000147] (data_monitor) JobStarted: {'identifier': 'data_monitor'}
+[0.006605] (gazebo_minirys_sim) JobStarted: {'identifier': 'gazebo_minirys_sim'}
+[0.008613] (minirys_msgs) JobStarted: {'identifier': 'minirys_msgs'}
+[0.010076] (minirys_sim) JobStarted: {'identifier': 'minirys_sim'}
+[0.013086] (data_monitor) JobProgress: {'identifier': 'data_monitor', 'progress': 'cmake'}
+[0.013338] (data_monitor) Command: {'cmd': ['/usr/bin/cmake', '/home/mathew/dev_ws/src/data_monitor', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/data_monitor'], 'cwd': '/home/mathew/dev_ws/build/data_monitor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/data_monitor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.015338] (gazebo_minirys_sim) JobProgress: {'identifier': 'gazebo_minirys_sim', 'progress': 'cmake'}
+[0.015360] (gazebo_minirys_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/mathew/dev_ws/src/gazebo_minirys_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/gazebo_minirys_sim'], 'cwd': '/home/mathew/dev_ws/build/gazebo_minirys_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/gazebo_minirys_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.016759] (minirys_msgs) JobProgress: {'identifier': 'minirys_msgs', 'progress': 'cmake'}
+[0.016783] (minirys_msgs) Command: {'cmd': ['/usr/bin/cmake', '/home/mathew/dev_ws/src/MiniRysMsgs-main', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/minirys_msgs'], 'cwd': '/home/mathew/dev_ws/build/minirys_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/minirys_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.019007] (minirys_sim) JobProgress: {'identifier': 'minirys_sim', 'progress': 'cmake'}
+[0.019315] (minirys_sim) Command: {'cmd': ['/usr/bin/cmake', '/home/mathew/dev_ws/src/minirys_sim', '-DAMENT_CMAKE_SYMLINK_INSTALL=1', '-DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/minirys_sim'], 'cwd': '/home/mathew/dev_ws/build/minirys_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/minirys_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[0.099550] (-) TimerEvent: {}
+[0.199931] (-) TimerEvent: {}
+[0.300532] (-) TimerEvent: {}
+[0.304534] (minirys_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.304807] (data_monitor) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.304972] (gazebo_minirys_sim) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.305099] (minirys_msgs) StdoutLine: {'line': b'-- The C compiler identification is GNU 11.4.0\n'}
+[0.400837] (-) TimerEvent: {}
+[0.446833] (data_monitor) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.447140] (gazebo_minirys_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.453167] (minirys_msgs) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.453512] (minirys_sim) StdoutLine: {'line': b'-- The CXX compiler identification is GNU 11.4.0\n'}
+[0.454081] (data_monitor) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.454182] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.457854] (minirys_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.458175] (minirys_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info\n'}
+[0.501018] (-) TimerEvent: {}
+[0.594344] (minirys_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.594459] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.594515] (data_monitor) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.594564] (minirys_msgs) StdoutLine: {'line': b'-- Detecting C compiler ABI info - done\n'}
+[0.599854] (minirys_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.600044] (data_monitor) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.600511] (minirys_msgs) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.600581] (minirys_msgs) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600629] (minirys_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600675] (data_monitor) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600719] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Check for working C compiler: /usr/bin/cc - skipped\n'}
+[0.600763] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting C compile features\n'}
+[0.600875] (data_monitor) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.601020] (minirys_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.601065] (-) TimerEvent: {}
+[0.601141] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.601206] (minirys_msgs) StdoutLine: {'line': b'-- Detecting C compile features - done\n'}
+[0.603360] (minirys_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.603546] (data_monitor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.603594] (minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.603640] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info\n'}
+[0.659194] (minirys_msgs) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.659391] (data_monitor) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.659522] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.659596] (minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compiler ABI info - done\n'}
+[0.665024] (minirys_msgs) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.665198] (data_monitor) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.665356] (minirys_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.665412] (data_monitor) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.665521] (minirys_msgs) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.665624] (data_monitor) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.667282] (data_monitor) StdoutLine: {'line': b'-- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.667736] (minirys_msgs) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.668088] (data_monitor) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.670820] (minirys_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.670955] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Check for working CXX compiler: /usr/bin/c++ - skipped\n'}
+[0.671128] (minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.671258] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compile features\n'}
+[0.671670] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.671740] (minirys_sim) StdoutLine: {'line': b'-- Detecting CXX compile features - done\n'}
+[0.673272] (minirys_sim) StdoutLine: {'line': b'-- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)\n'}
+[0.673417] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.674493] (minirys_sim) StdoutLine: {'line': b'-- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)\n'}
+[0.701182] (-) TimerEvent: {}
+[0.775103] (data_monitor) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.775291] (minirys_msgs) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.780616] (minirys_sim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.780756] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter \n'}
+[0.801273] (-) TimerEvent: {}
+[0.822910] (minirys_msgs) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.823043] (data_monitor) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.825161] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.825309] (minirys_sim) StdoutLine: {'line': b'-- Override CMake install command with custom implementation using symlinks instead of copying resources\n'}
+[0.845427] (minirys_msgs) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.845703] (data_monitor) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.845762] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.845889] (minirys_sim) StdoutLine: {'line': b'-- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)\n'}
+[0.848241] (data_monitor) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.848314] (minirys_sim) StdoutLine: {'line': b'-- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)\n'}
+[0.849173] (minirys_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.849994] (minirys_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.850676] (data_monitor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.854952] (minirys_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.856436] (minirys_msgs) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.857187] (data_monitor) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.890359] (minirys_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.894892] (minirys_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.895107] (data_monitor) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.901361] (-) TimerEvent: {}
+[0.922818] (minirys_msgs) StdoutLine: {'line': b'-- Found std_msgs: 4.2.3 (/opt/ros/humble/share/std_msgs/cmake)\n'}
+[0.934824] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found rosidl_generator_c: 3.1.5 (/opt/ros/humble/share/rosidl_generator_c/cmake)\n'}
+[0.937803] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)\n'}
+[0.943316] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found rosidl_generator_cpp: 3.1.5 (/opt/ros/humble/share/rosidl_generator_cpp/cmake)\n'}
+[0.952768] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[0.966502] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[0.973419] (minirys_msgs) StdoutLine: {'line': b'-- Found geometry_msgs: 4.2.3 (/opt/ros/humble/share/geometry_msgs/cmake)\n'}
+[1.001465] (-) TimerEvent: {}
+[1.101681] (-) TimerEvent: {}
+[1.201919] (-) TimerEvent: {}
+[1.235725] (minirys_msgs) StdoutLine: {'line': b'-- Found ament_cmake_ros: 0.10.0 (/opt/ros/humble/share/ament_cmake_ros/cmake)\n'}
+[1.302029] (-) TimerEvent: {}
+[1.340134] (data_monitor) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.342396] (data_monitor) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.369449] (minirys_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.370952] (minirys_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.395205] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)\n'}
+[1.396710] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)\n'}
+[1.402133] (-) TimerEvent: {}
+[1.413567] (data_monitor) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.414325] (minirys_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c\n'}
+[1.433052] (data_monitor) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.434742] (minirys_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.453825] (minirys_sim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.461119] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  \n'}
+[1.466236] (data_monitor) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.474281] (data_monitor) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.480012] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found FastRTPS: /opt/ros/humble/include  \n'}
+[1.486893] (minirys_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.492963] (minirys_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.502245] (-) TimerEvent: {}
+[1.513898] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Using RMW implementation 'rmw_fastrtps_cpp' as default\n"}
+[1.520393] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Looking for pthread.h\n'}
+[1.524205] (data_monitor) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.524427] (data_monitor) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.541177] (minirys_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.541359] (minirys_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.567007] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Looking for pthread.h - found\n'}
+[1.567239] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD\n'}
+[1.574227] (data_monitor) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.575007] (data_monitor) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.588660] (minirys_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.589705] (minirys_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.602368] (-) TimerEvent: {}
+[1.617615] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success\n'}
+[1.618338] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found Threads: TRUE  \n'}
+[1.650058] (minirys_msgs) StdoutLine: {'line': b'-- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp\n'}
+[1.667316] (minirys_msgs) StdoutLine: {'line': b'-- Found PythonInterp: /usr/bin/python3 (found suitable version "3.10.12", minimum required is "3.6") \n'}
+[1.668921] (minirys_msgs) StdoutLine: {'line': b'-- Found python_cmake_module: 0.10.0 (/opt/ros/humble/share/python_cmake_module/cmake)\n'}
+[1.690062] (data_monitor) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.691005] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.691118] (minirys_msgs) StdoutLine: {'line': b'-- Found PythonLibs: /usr/lib/x86_64-linux-gnu/libpython3.10.so (found suitable version "3.10.12", minimum required is "3.5") \n'}
+[1.691214] (minirys_msgs) StdoutLine: {'line': b'-- Using PYTHON_EXECUTABLE: /usr/bin/python3\n'}
+[1.691270] (minirys_msgs) StdoutLine: {'line': b'-- Using PYTHON_INCLUDE_DIRS: /usr/include/python3.10\n'}
+[1.691317] (minirys_msgs) StdoutLine: {'line': b'-- Using PYTHON_LIBRARIES: /usr/lib/x86_64-linux-gnu/libpython3.10.so\n'}
+[1.697939] (minirys_sim) StdoutLine: {'line': b'-- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") \n'}
+[1.698735] (data_monitor) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.698825] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'bullet>=2.82'\n"}
+[1.702431] (-) TimerEvent: {}
+[1.706245] (minirys_sim) StdoutLine: {'line': b'--   Found bullet, version 3.05\n'}
+[1.706545] (minirys_msgs) StdoutLine: {'line': b'-- Found PythonExtra: .so  \n'}
+[1.770693] (minirys_sim) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.771598] (data_monitor) StdoutLine: {'line': b'-- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") \n'}
+[1.778784] (minirys_msgs) StdoutLine: {'line': b'-- Configuring done\n'}
+[1.802577] (-) TimerEvent: {}
+[1.806663] (data_monitor) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.806827] (minirys_sim) StdoutLine: {'line': b'-- Found assimp: /usr/include (found version "5.2.0") \n'}
+[1.811231] (minirys_msgs) StdoutLine: {'line': b'-- Generating done\n'}
+[1.813186] (minirys_msgs) StdoutLine: {'line': b'-- Build files have been written to: /home/mathew/dev_ws/build/minirys_msgs\n'}
+[1.818993] (minirys_msgs) CommandEnded: {'returncode': 0}
+[1.819614] (minirys_msgs) JobProgress: {'identifier': 'minirys_msgs', 'progress': 'build'}
+[1.819635] (minirys_msgs) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mathew/dev_ws/build/minirys_msgs', '--', '-j16', '-l16'], 'cwd': '/home/mathew/dev_ws/build/minirys_msgs', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/minirys_msgs'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[1.826660] (data_monitor) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.826797] (minirys_sim) StdoutLine: {'line': b'-- Found DART: /usr/include (Required is at least version "6.6") found components: dart \n'}
+[1.845541] (minirys_msgs) StdoutLine: {'line': b'[  1%] \x1b[34m\x1b[1mGenerating C code for ROS interfaces\x1b[0m\n'}
+[1.846712] (data_monitor) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.846868] (minirys_sim) StdoutLine: {'line': b'-- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time \n'}
+[1.851955] (minirys_msgs) StdoutLine: {'line': b'[  2%] \x1b[34m\x1b[1mGenerating C++ code for ROS interfaces\x1b[0m\n'}
+[1.857180] (minirys_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_symlink_minirys_msgs\n'}
+[1.860865] (data_monitor) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.861279] (minirys_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") \n'}
+[1.864343] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.865262] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[1.870366] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.870978] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-math6\n'}
+[1.871955] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.872267] (data_monitor) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.872450] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE...\n'}
+[1.872991] (minirys_sim) StdoutLine: {'line': b'-- OGRE_PREFIX_WATCH changed.\n'}
+[1.876004] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.877801] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'OGRE'\n"}
+[1.883994] (data_monitor) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.887454] (minirys_sim) StdoutLine: {'line': b'--   Found OGRE, version 1.9.0\n'}
+[1.902686] (-) TimerEvent: {}
+[1.904191] (data_monitor) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.908995] (data_monitor) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.909705] (minirys_sim) StdoutLine: {'line': b'-- Found Ogre Ghadamon (1.9.0)\n'}
+[1.914155] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so\n'}
+[1.916062] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.919779] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.919866] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.921139] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_Paging...\n'}
+[1.923316] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.923401] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.924737] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so\n'}
+[1.924813] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_Terrain...\n'}
+[1.926665] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.926746] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.928141] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so\n'}
+[1.928241] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_Property...\n'}
+[1.930180] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.930271] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.931802] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so\n'}
+[1.931885] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_RTShaderSystem...\n'}
+[1.933711] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.933785] (data_monitor) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.935320] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so\n'}
+[1.935394] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_Volume...\n'}
+[1.936995] (data_monitor) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[1.938981] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so\n'}
+[1.939057] (minirys_sim) StdoutLine: {'line': b'-- Looking for OGRE_Overlay...\n'}
+[1.942387] (minirys_sim) StdoutLine: {'line': b'-- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so\n'}
+[2.002797] (-) TimerEvent: {}
+[2.011452] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.012913] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.013269] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.016562] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.016724] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.017747] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-transport8 -- found version 8.2.1\n'}
+[2.018081] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-transport8\n'}
+[2.025173] (data_monitor) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.029734] (minirys_sim) StdoutLine: {'line': b'-- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") \n'}
+[2.032410] (data_monitor) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.035812] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.036653] (minirys_sim) StdoutLine: {'line': b'-- Config-file not installed for ZeroMQ -- checking for pkg-config\n'}
+[2.039906] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'libzmq >= 4'\n"}
+[2.046287] (data_monitor) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.047772] (minirys_sim) StdoutLine: {'line': b'--   Found libzmq , version 4.3.4\n'}
+[2.048472] (minirys_msgs) StdoutLine: {'line': b'running egg_info\n'}
+[2.048840] (minirys_msgs) StdoutLine: {'line': b'creating minirys_msgs.egg-info\n'}
+[2.048971] (minirys_msgs) StdoutLine: {'line': b'writing minirys_msgs.egg-info/PKG-INFO\n'}
+[2.049095] (minirys_msgs) StdoutLine: {'line': b'writing dependency_links to minirys_msgs.egg-info/dependency_links.txt\n'}
+[2.049208] (minirys_msgs) StdoutLine: {'line': b'writing top-level names to minirys_msgs.egg-info/top_level.txt\n'}
+[2.049817] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Added test 'copyright' to check source files copyright and LICENSE\n"}
+[2.050615] (minirys_msgs) StdoutLine: {'line': b"writing manifest file 'minirys_msgs.egg-info/SOURCES.txt'\n"}
+[2.052221] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Added test 'flake8' to check Python code syntax and style conventions\n"}
+[2.052378] (minirys_msgs) StdoutLine: {'line': b"reading manifest file 'minirys_msgs.egg-info/SOURCES.txt'\n"}
+[2.052749] (minirys_msgs) StdoutLine: {'line': b"writing manifest file 'minirys_msgs.egg-info/SOURCES.txt'\n"}
+[2.052978] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Added test 'lint_cmake' to check CMake code style\n"}
+[2.053471] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Added test 'pep257' to check Python code against some of the docstring style conventions in PEP 257\n"}
+[2.054666] (gazebo_minirys_sim) StdoutLine: {'line': b"-- Added test 'xmllint' to check XML markup files\n"}
+[2.055648] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.059572] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Generating done\n'}
+[2.060889] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Build files have been written to: /home/mathew/dev_ws/build/gazebo_minirys_sim\n'}
+[2.069009] (gazebo_minirys_sim) CommandEnded: {'returncode': 0}
+[2.069589] (gazebo_minirys_sim) JobProgress: {'identifier': 'gazebo_minirys_sim', 'progress': 'build'}
+[2.070103] (gazebo_minirys_sim) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mathew/dev_ws/build/gazebo_minirys_sim', '--', '-j16', '-l16'], 'cwd': '/home/mathew/dev_ws/build/gazebo_minirys_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/gazebo_minirys_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.070526] (data_monitor) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.071865] (minirys_sim) StdoutLine: {'line': b'-- Found ZeroMQ: TRUE (Required is at least version "4") \n'}
+[2.072458] (minirys_msgs) StdoutLine: {'line': b'[  2%] Built target ament_cmake_python_build_minirys_msgs_egg\n'}
+[2.074541] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.075724] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'uuid'\n"}
+[2.082280] (data_monitor) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.083344] (minirys_sim) StdoutLine: {'line': b'--   Found uuid, version 2.37.2\n'}
+[2.101785] (data_monitor) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.102833] (minirys_sim) StdoutLine: {'line': b'-- Found UUID: TRUE  \n'}
+[2.102913] (-) TimerEvent: {}
+[2.103284] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.103628] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.104113] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.104451] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-msgs5\n'}
+[2.106598] (gazebo_minirys_sim) StdoutLine: {'line': b'Built target ament_cmake_python_symlink_gazebo_minirys_sim\n'}
+[2.116242] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.116986] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.120011] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.120386] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'tinyxml2'\n"}
+[2.128118] (data_monitor) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.128313] (minirys_sim) StdoutLine: {'line': b'--   Found tinyxml2, version 9.0.0\n'}
+[2.149028] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.149203] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.150556] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.150681] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.150901] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.151020] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3\n'}
+[2.151190] (minirys_sim) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.151296] (data_monitor) StdoutLine: {'line': b'-- Looking for dlfcn.h - found\n'}
+[2.151799] (minirys_sim) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.151969] (data_monitor) StdoutLine: {'line': b'-- Looking for libdl - found\n'}
+[2.152748] (minirys_sim) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.152997] (data_monitor) StdoutLine: {'line': b'-- Found DL: TRUE  \n'}
+[2.160700] (data_monitor) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.160862] (minirys_sim) StdoutLine: {'line': b'-- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") \n'}
+[2.161168] (minirys_sim) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.161290] (data_monitor) StdoutLine: {'line': b'-- Searching for <ignition-common3> component [graphics]\n'}
+[2.162598] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.162720] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-common3-graphics -- found version 3.14.0\n'}
+[2.162964] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.163094] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-common3-graphics\n'}
+[2.163220] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.163418] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.165536] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.165661] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-fuel_tools4 -- found version 4.4.0\n'}
+[2.165854] (minirys_sim) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.165978] (data_monitor) StdoutLine: {'line': b'-- Searching for dependencies of ignition-fuel_tools4\n'}
+[2.203041] (-) TimerEvent: {}
+[2.213870] (data_monitor) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.214045] (minirys_sim) StdoutLine: {'line': b'-- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  \n'}
+[2.220203] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.220298] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'jsoncpp'\n"}
+[2.228184] (minirys_sim) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.228293] (data_monitor) StdoutLine: {'line': b'--   Found jsoncpp, version 1.9.5\n'}
+[2.248094] (minirys_sim) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.248235] (data_monitor) StdoutLine: {'line': b'-- Found JSONCPP: TRUE  \n'}
+[2.251950] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.252096] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'libzip'\n"}
+[2.260014] (data_monitor) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.260198] (minirys_sim) StdoutLine: {'line': b'--   Found libzip, version 1.7.3\n'}
+[2.281279] (data_monitor) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.281396] (minirys_sim) StdoutLine: {'line': b'-- Found ZIP: TRUE  \n'}
+[2.281732] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.281805] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-common3 -- found version 3.14.0\n'}
+[2.282178] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.282249] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-math6 -- found version 6.15.1\n'}
+[2.282623] (minirys_sim) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.282695] (data_monitor) StdoutLine: {'line': b'-- Looking for ignition-msgs5 -- found version 5.8.1\n'}
+[2.286471] (data_monitor) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.286547] (minirys_sim) StdoutLine: {'line': b'-- Gazebo version: 11.10\n'}
+[2.286874] (minirys_sim) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.287027] (data_monitor) StdoutLine: {'line': b"-- Checking for module 'tbb'\n"}
+[2.295675] (minirys_sim) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.295781] (data_monitor) StdoutLine: {'line': b'--   Found tbb, version 2021.5.0\n'}
+[2.299380] (gazebo_minirys_sim) StdoutLine: {'line': b'running egg_info\n'}
+[2.299747] (gazebo_minirys_sim) StdoutLine: {'line': b'creating gazebo_minirys_sim.egg-info\n'}
+[2.299882] (gazebo_minirys_sim) StdoutLine: {'line': b'writing gazebo_minirys_sim.egg-info/PKG-INFO\n'}
+[2.300011] (gazebo_minirys_sim) StdoutLine: {'line': b'writing dependency_links to gazebo_minirys_sim.egg-info/dependency_links.txt\n'}
+[2.300099] (gazebo_minirys_sim) StdoutLine: {'line': b'writing top-level names to gazebo_minirys_sim.egg-info/top_level.txt\n'}
+[2.300959] (gazebo_minirys_sim) StdoutLine: {'line': b"writing manifest file 'gazebo_minirys_sim.egg-info/SOURCES.txt'\n"}
+[2.302280] (gazebo_minirys_sim) StdoutLine: {'line': b"reading manifest file 'gazebo_minirys_sim.egg-info/SOURCES.txt'\n"}
+[2.302619] (gazebo_minirys_sim) StdoutLine: {'line': b"writing manifest file 'gazebo_minirys_sim.egg-info/SOURCES.txt'\n"}
+[2.303125] (-) TimerEvent: {}
+[2.329465] (gazebo_minirys_sim) StdoutLine: {'line': b'Built target ament_cmake_python_build_gazebo_minirys_sim_egg\n'}
+[2.332692] (minirys_msgs) StdoutLine: {'line': b'[  2%] Built target minirys_msgs__cpp\n'}
+[2.334798] (data_monitor) StdoutLine: {'line': b'-- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)\n'}
+[2.337672] (minirys_sim) StderrLine: {'line': b'\x1b[31mCMake Error at /opt/ros/humble/share/rosidl_cmake/cmake/rosidl_generate_interfaces.cmake:93 (message):\n'}
+[2.337925] (minirys_sim) StderrLine: {'line': b"  rosidl_generate_interfaces() the passed file 'srv/OdomService.srv' doesn't\n"}
+[2.338033] (minirys_sim) StderrLine: {'line': b'  exist relative to the CMAKE_CURRENT_SOURCE_DIR\n'}
+[2.338121] (minirys_sim) StderrLine: {'line': b"  '/home/mathew/dev_ws/src/minirys_sim'\n"}
+[2.338199] (minirys_sim) StderrLine: {'line': b'Call Stack (most recent call first):\n'}
+[2.338276] (minirys_sim) StderrLine: {'line': b'  CMakeLists.txt:26 (rosidl_generate_interfaces)\n'}
+[2.338349] (minirys_sim) StderrLine: {'line': b'\n'}
+[2.338422] (minirys_sim) StderrLine: {'line': b'\x1b[0m\n'}
+[2.338831] (minirys_sim) StdoutLine: {'line': b'-- Configuring incomplete, errors occurred!\n'}
+[2.338930] (minirys_sim) StdoutLine: {'line': b'See also "/home/mathew/dev_ws/build/minirys_sim/CMakeFiles/CMakeOutput.log".\n'}
+[2.340169] (gazebo_minirys_sim) CommandEnded: {'returncode': 0}
+[2.342356] (minirys_msgs) StdoutLine: {'line': b'[  4%] \x1b[34m\x1b[1mGenerating C++ type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.342679] (data_monitor) StdoutLine: {'line': b'-- Configuring done\n'}
+[2.343055] (minirys_msgs) StdoutLine: {'line': b'[  5%] \x1b[34m\x1b[1mGenerating C++ type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.343218] (minirys_msgs) StdoutLine: {'line': b'[  7%] \x1b[34m\x1b[1mGenerating C++ introspection for ROS interfaces\x1b[0m\n'}
+[2.348730] (data_monitor) StdoutLine: {'line': b'-- Generating done\n'}
+[2.350729] (data_monitor) StdoutLine: {'line': b'-- Build files have been written to: /home/mathew/dev_ws/build/data_monitor\n'}
+[2.353962] (minirys_sim) CommandEnded: {'returncode': 1}
+[2.356328] (gazebo_minirys_sim) JobProgress: {'identifier': 'gazebo_minirys_sim', 'progress': 'install'}
+[2.362274] (minirys_msgs) StdoutLine: {'line': b'[  8%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/msg/detail/battery_status__functions.c.o\x1b[0m\n'}
+[2.363844] (minirys_msgs) StdoutLine: {'line': b'[  9%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/msg/detail/angular_pose__functions.c.o\x1b[0m\n'}
+[2.364004] (minirys_msgs) StdoutLine: {'line': b'[ 11%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/msg/detail/motor_command__functions.c.o\x1b[0m\n'}
+[2.364219] (minirys_msgs) StdoutLine: {'line': b'[ 14%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/msg/detail/motor_driver_status__functions.c.o\x1b[0m\n'}
+[2.364366] (minirys_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/srv/detail/set_pose__functions.c.o\x1b[0m\n'}
+[2.364510] (minirys_msgs) StdoutLine: {'line': b'[ 15%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_c.dir/rosidl_generator_c/minirys_msgs/msg/detail/rt_test_result__functions.c.o\x1b[0m\n'}
+[2.365408] (gazebo_minirys_sim) Command: {'cmd': ['/usr/bin/cmake', '--install', '/home/mathew/dev_ws/build/gazebo_minirys_sim'], 'cwd': '/home/mathew/dev_ws/build/gazebo_minirys_sim', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/gazebo_minirys_sim'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.366534] (data_monitor) CommandEnded: {'returncode': 0}
+[2.367269] (data_monitor) JobProgress: {'identifier': 'data_monitor', 'progress': 'build'}
+[2.367906] (data_monitor) Command: {'cmd': ['/usr/bin/cmake', '--build', '/home/mathew/dev_ws/build/data_monitor', '--', '-j16', '-l16'], 'cwd': '/home/mathew/dev_ws/build/data_monitor', 'env': OrderedDict([('LESSOPEN', '| /usr/bin/lesspipe %s'), ('USER', 'mathew'), ('LC_TIME', 'pl_PL.UTF-8'), ('XDG_SESSION_TYPE', 'x11'), ('SHLVL', '1'), ('LD_LIBRARY_PATH', '/usr/lib/x86_64-linux-gnu/gazebo-11/plugins:/opt/ros/humble/opt/rviz_ogre_vendor/lib:/opt/ros/humble/lib/x86_64-linux-gnu:/opt/ros/humble/lib'), ('HOME', '/home/mathew'), ('DESKTOP_SESSION', 'ubuntu'), ('ROS_PYTHON_VERSION', '3'), ('GNOME_SHELL_SESSION_MODE', 'ubuntu'), ('GTK_MODULES', 'gail:atk-bridge'), ('LC_MONETARY', 'pl_PL.UTF-8'), ('DBUS_STARTER_BUS_TYPE', 'session'), ('SYSTEMD_EXEC_PID', '2385'), ('DBUS_SESSION_BUS_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('COLORTERM', 'truecolor'), ('MANDATORY_PATH', '/usr/share/gconf/ubuntu.mandatory.path'), ('IM_CONFIG_PHASE', '1'), ('ROS_DISTRO', 'humble'), ('GTK_IM_MODULE', 'ibus'), ('LOGNAME', 'mathew'), ('_', '/usr/bin/colcon'), ('ROS_VERSION', '2'), ('XDG_SESSION_CLASS', 'user'), ('DEFAULTS_PATH', '/usr/share/gconf/ubuntu.default.path'), ('USERNAME', 'mathew'), ('TERM', 'xterm-256color'), ('GNOME_DESKTOP_SESSION_ID', 'this-is-deprecated'), ('ROS_LOCALHOST_ONLY', '0'), ('WINDOWPATH', '2'), ('PATH', '/opt/ros/humble/bin:/home/mathew/.local/bin:/usr/local/sbin:/usr/local/bin:/usr/sbin:/usr/bin:/sbin:/bin:/usr/games:/usr/local/games:/snap/bin:/snap/bin'), ('SESSION_MANAGER', 'local/mathew:@/tmp/.ICE-unix/2385,unix/mathew:/tmp/.ICE-unix/2385'), ('XDG_MENU_PREFIX', 'gnome-'), ('LC_ADDRESS', 'pl_PL.UTF-8'), ('GNOME_TERMINAL_SCREEN', '/org/gnome/Terminal/screen/fca46d44_5706_4a5d_9c05_280dc88562a6'), ('XDG_RUNTIME_DIR', '/run/user/1000'), ('DISPLAY', ':1'), ('LANG', 'en_US.UTF-8'), ('XDG_CURRENT_DESKTOP', 'ubuntu:GNOME'), ('LC_TELEPHONE', 'pl_PL.UTF-8'), ('XMODIFIERS', '@im=ibus'), ('XDG_SESSION_DESKTOP', 'ubuntu'), ('XAUTHORITY', '/run/user/1000/gdm/Xauthority'), ('LS_COLORS', 'rs=0:di=01;34:ln=01;36:mh=00:pi=40;33:so=01;35:do=01;35:bd=40;33;01:cd=40;33;01:or=40;31;01:mi=00:su=37;41:sg=30;43:ca=30;41:tw=30;42:ow=34;42:st=37;44:ex=01;32:*.tar=01;31:*.tgz=01;31:*.arc=01;31:*.arj=01;31:*.taz=01;31:*.lha=01;31:*.lz4=01;31:*.lzh=01;31:*.lzma=01;31:*.tlz=01;31:*.txz=01;31:*.tzo=01;31:*.t7z=01;31:*.zip=01;31:*.z=01;31:*.dz=01;31:*.gz=01;31:*.lrz=01;31:*.lz=01;31:*.lzo=01;31:*.xz=01;31:*.zst=01;31:*.tzst=01;31:*.bz2=01;31:*.bz=01;31:*.tbz=01;31:*.tbz2=01;31:*.tz=01;31:*.deb=01;31:*.rpm=01;31:*.jar=01;31:*.war=01;31:*.ear=01;31:*.sar=01;31:*.rar=01;31:*.alz=01;31:*.ace=01;31:*.zoo=01;31:*.cpio=01;31:*.7z=01;31:*.rz=01;31:*.cab=01;31:*.wim=01;31:*.swm=01;31:*.dwm=01;31:*.esd=01;31:*.jpg=01;35:*.jpeg=01;35:*.mjpg=01;35:*.mjpeg=01;35:*.gif=01;35:*.bmp=01;35:*.pbm=01;35:*.pgm=01;35:*.ppm=01;35:*.tga=01;35:*.xbm=01;35:*.xpm=01;35:*.tif=01;35:*.tiff=01;35:*.png=01;35:*.svg=01;35:*.svgz=01;35:*.mng=01;35:*.pcx=01;35:*.mov=01;35:*.mpg=01;35:*.mpeg=01;35:*.m2v=01;35:*.mkv=01;35:*.webm=01;35:*.webp=01;35:*.ogm=01;35:*.mp4=01;35:*.m4v=01;35:*.mp4v=01;35:*.vob=01;35:*.qt=01;35:*.nuv=01;35:*.wmv=01;35:*.asf=01;35:*.rm=01;35:*.rmvb=01;35:*.flc=01;35:*.avi=01;35:*.fli=01;35:*.flv=01;35:*.gl=01;35:*.dl=01;35:*.xcf=01;35:*.xwd=01;35:*.yuv=01;35:*.cgm=01;35:*.emf=01;35:*.ogv=01;35:*.ogx=01;35:*.aac=00;36:*.au=00;36:*.flac=00;36:*.m4a=00;36:*.mid=00;36:*.midi=00;36:*.mka=00;36:*.mp3=00;36:*.mpc=00;36:*.ogg=00;36:*.ra=00;36:*.wav=00;36:*.oga=00;36:*.opus=00;36:*.spx=00;36:*.xspf=00;36:'), ('GNOME_TERMINAL_SERVICE', ':1.577'), ('SSH_AGENT_LAUNCHER', 'gnome-keyring'), ('SSH_AUTH_SOCK', '/run/user/1000/keyring/ssh'), ('AMENT_PREFIX_PATH', '/opt/ros/humble'), ('SHELL', '/bin/bash'), ('LC_NAME', 'pl_PL.UTF-8'), ('QT_ACCESSIBILITY', '1'), ('GDMSESSION', 'ubuntu'), ('LESSCLOSE', '/usr/bin/lesspipe %s %s'), ('LC_MEASUREMENT', 'pl_PL.UTF-8'), ('GPG_AGENT_INFO', '/run/user/1000/gnupg/S.gpg-agent:0:1'), ('LC_IDENTIFICATION', 'pl_PL.UTF-8'), ('QT_IM_MODULE', 'ibus'), ('PWD', '/home/mathew/dev_ws/build/data_monitor'), ('LC_ALL', 'en_US.UTF-8'), ('XDG_CONFIG_DIRS', '/etc/xdg/xdg-ubuntu:/etc/xdg'), ('DBUS_STARTER_ADDRESS', 'unix:path=/run/user/1000/bus,guid=858b1c9642e207139218178a662886ed'), ('XDG_DATA_DIRS', '/usr/share/ubuntu:/usr/share/gnome:/home/mathew/.local/share/flatpak/exports/share:/var/lib/flatpak/exports/share:/usr/local/share/:/usr/share/:/var/lib/snapd/desktop'), ('PYTHONPATH', '/opt/ros/humble/lib/python3.10/site-packages:/opt/ros/humble/local/lib/python3.10/dist-packages'), ('LC_NUMERIC', 'en_US.UTF-8'), ('LC_PAPER', 'pl_PL.UTF-8'), ('COLCON', '1'), ('VTE_VERSION', '6800'), ('CMAKE_PREFIX_PATH', '/opt/ros/humble')]), 'shell': False}
+[2.370826] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Install configuration: ""\n'}
+[2.371216] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Execute custom install script\n'}
+[2.371492] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/launch/world.launch.py\n'}
+[2.377717] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/empty.world\n'}
+[2.381601] (minirys_sim) JobEnded: {'identifier': 'minirys_sim', 'rc': 1}
+[2.384102] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room.world\n'}
+[2.390261] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room_minirys_sim/model.config\n'}
+[2.398657] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room_minirys_sim/model.sdf\n'}
+[2.403247] (-) TimerEvent: {}
+[2.405032] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/short_room/model.config\n'}
+[2.406108] (data_monitor) JobEnded: {'identifier': 'data_monitor', 'rc': 'SIGINT'}
+[2.411146] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/short_room/model.sdf\n'}
+[2.417012] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/pythonpath.sh\n'}
+[2.417750] (minirys_msgs) StdoutLine: {'line': b'[ 16%] \x1b[32m\x1b[1mLinking C shared library libminirys_msgs__rosidl_generator_c.so\x1b[0m\n'}
+[2.422473] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/pythonpath.dsv\n'}
+[2.427994] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/PKG-INFO\n'}
+[2.433760] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/SOURCES.txt\n'}
+[2.439444] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/dependency_links.txt\n'}
+[2.444540] (minirys_msgs) StdoutLine: {'line': b'[ 16%] Built target minirys_msgs__rosidl_generator_c\n'}
+[2.444916] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/top_level.txt\n'}
+[2.450779] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim/__init__.py\n'}
+[2.451043] (minirys_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C introspection for ROS interfaces\x1b[0m\n'}
+[2.451144] (minirys_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support for eProsima Fast-RTPS\x1b[0m\n'}
+[2.451221] (minirys_msgs) StdoutLine: {'line': b'[ 21%] \x1b[34m\x1b[1mGenerating C type support dispatch for ROS interfaces\x1b[0m\n'}
+[2.456937] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/package_run_dependencies/gazebo_minirys_sim\n'}
+[2.463496] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/parent_prefix_path/gazebo_minirys_sim\n'}
+[2.469629] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/ament_prefix_path.sh\n'}
+[2.476559] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/ament_prefix_path.dsv\n'}
+[2.482620] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/path.sh\n'}
+[2.488904] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/path.dsv\n'}
+[2.495472] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.bash\n'}
+[2.501628] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.sh\n'}
+[2.503314] (-) TimerEvent: {}
+[2.507539] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.zsh\n'}
+[2.513842] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.dsv\n'}
+[2.519800] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/package.dsv\n'}
+[2.526245] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/packages/gazebo_minirys_sim\n'}
+[2.532446] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/cmake/gazebo_minirys_simConfig.cmake\n'}
+[2.538269] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/cmake/gazebo_minirys_simConfig-version.cmake\n'}
+[2.543955] (gazebo_minirys_sim) StdoutLine: {'line': b'-- Symlinking: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/package.xml\n'}
+[2.572727] (gazebo_minirys_sim) StdoutLine: {'line': b"Listing '/home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim'...\n"}
+[2.572884] (gazebo_minirys_sim) StdoutLine: {'line': b"Compiling '/home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim/__init__.py'...\n"}
+[2.577233] (gazebo_minirys_sim) JobEnded: {'identifier': 'gazebo_minirys_sim', 'rc': 'SIGINT'}
+[2.603405] (-) TimerEvent: {}
+[2.703616] (-) TimerEvent: {}
+[2.752656] (minirys_msgs) StdoutLine: {'line': b'[ 22%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/msg/detail/battery_status__type_support.cpp.o\x1b[0m\n'}
+[2.753104] (minirys_msgs) StdoutLine: {'line': b'[ 23%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/srv/detail/set_pose__type_support.cpp.o\x1b[0m\n'}
+[2.754040] (minirys_msgs) StdoutLine: {'line': b'[ 25%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/msg/detail/angular_pose__type_support.cpp.o\x1b[0m\n'}
+[2.754858] (minirys_msgs) StdoutLine: {'line': b'[ 26%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/msg/detail/motor_command__type_support.cpp.o\x1b[0m\n'}
+[2.755029] (minirys_msgs) StdoutLine: {'line': b'[ 28%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/msg/detail/rt_test_result__type_support.cpp.o\x1b[0m\n'}
+[2.755124] (minirys_msgs) StdoutLine: {'line': b'[ 29%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_cpp.dir/rosidl_typesupport_introspection_cpp/minirys_msgs/msg/detail/motor_driver_status__type_support.cpp.o\x1b[0m\n'}
+[2.760573] (minirys_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/msg/angular_pose__type_support.cpp.o\x1b[0m\n'}
+[2.760770] (minirys_msgs) StdoutLine: {'line': b'[ 32%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/srv/set_pose__type_support.cpp.o\x1b[0m\n'}
+[2.760867] (minirys_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/msg/battery_status__type_support.cpp.o\x1b[0m\n'}
+[2.760940] (minirys_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[2.761048] (minirys_msgs) StdoutLine: {'line': b'[ 36%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/msg/motor_driver_status__type_support.cpp.o\x1b[0m\n'}
+[2.761127] (minirys_msgs) StdoutLine: {'line': b'[ 38%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_cpp.dir/rosidl_typesupport_cpp/minirys_msgs/msg/rt_test_result__type_support.cpp.o\x1b[0m\n'}
+[2.803706] (-) TimerEvent: {}
+[2.878753] (minirys_msgs) StdoutLine: {'line': b'[ 39%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/msg/angular_pose__type_support.cpp.o\x1b[0m\n'}
+[2.903804] (-) TimerEvent: {}
+[2.942218] (minirys_msgs) StdoutLine: {'line': b'[ 40%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/msg/battery_status__type_support.cpp.o\x1b[0m\n'}
+[2.980803] (minirys_msgs) StdoutLine: {'line': b'[ 42%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/msg/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.003927] (-) TimerEvent: {}
+[3.015367] (minirys_msgs) StdoutLine: {'line': b'[ 43%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/msg/motor_driver_status__type_support.cpp.o\x1b[0m\n'}
+[3.037889] (minirys_msgs) StdoutLine: {'line': b'[ 45%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/msg/detail/dds_fastrtps/angular_pose__type_support.cpp.o\x1b[0m\n'}
+[3.047234] (minirys_msgs) StdoutLine: {'line': b'[ 46%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/msg/rt_test_result__type_support.cpp.o\x1b[0m\n'}
+[3.066449] (minirys_msgs) StdoutLine: {'line': b'[ 47%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/msg/detail/angular_pose__type_support.c.o\x1b[0m\n'}
+[3.080229] (minirys_msgs) StdoutLine: {'line': b'[ 49%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_c.dir/rosidl_typesupport_c/minirys_msgs/srv/set_pose__type_support.cpp.o\x1b[0m\n'}
+[3.088284] (minirys_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/msg/detail/dds_fastrtps/battery_status__type_support.cpp.o\x1b[0m\n'}
+[3.088494] (minirys_msgs) StdoutLine: {'line': b'[ 52%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/msg/detail/motor_command__type_support.c.o\x1b[0m\n'}
+[3.088638] (minirys_msgs) StdoutLine: {'line': b'[ 53%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/msg/detail/battery_status__type_support.c.o\x1b[0m\n'}
+[3.101458] (minirys_msgs) StdoutLine: {'line': b'[ 54%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/msg/detail/motor_driver_status__type_support.c.o\x1b[0m\n'}
+[3.102963] (minirys_msgs) StdoutLine: {'line': b'[ 56%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/msg/detail/rt_test_result__type_support.c.o\x1b[0m\n'}
+[3.104004] (-) TimerEvent: {}
+[3.105623] (minirys_msgs) StdoutLine: {'line': b'[ 57%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c.dir/rosidl_typesupport_introspection_c/minirys_msgs/srv/detail/set_pose__type_support.c.o\x1b[0m\n'}
+[3.115575] (minirys_msgs) StdoutLine: {'line': b'[ 59%] \x1b[32m\x1b[1mLinking CXX shared library libminirys_msgs__rosidl_typesupport_c.so\x1b[0m\n'}
+[3.123397] (minirys_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/angular_pose__type_support_c.cpp.o\x1b[0m\n'}
+[3.123601] (minirys_msgs) StdoutLine: {'line': b'[ 61%] \x1b[32m\x1b[1mLinking CXX shared library libminirys_msgs__rosidl_typesupport_cpp.so\x1b[0m\n'}
+[3.125211] (minirys_msgs) StdoutLine: {'line': b'[ 63%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/msg/detail/dds_fastrtps/motor_command__type_support.cpp.o\x1b[0m\n'}
+[3.127787] (minirys_msgs) StdoutLine: {'line': b'[ 64%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/battery_status__type_support_c.cpp.o\x1b[0m\n'}
+[3.141241] (minirys_msgs) StdoutLine: {'line': b'[ 66%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/motor_command__type_support_c.cpp.o\x1b[0m\n'}
+[3.145231] (minirys_msgs) StdoutLine: {'line': b'[ 67%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/motor_driver_status__type_support_c.cpp.o\x1b[0m\n'}
+[3.151789] (minirys_msgs) StdoutLine: {'line': b'[ 69%] \x1b[32m\x1b[1mLinking C shared library libminirys_msgs__rosidl_typesupport_introspection_c.so\x1b[0m\n'}
+[3.161988] (minirys_msgs) StdoutLine: {'line': b'[ 69%] Built target minirys_msgs__rosidl_typesupport_c\n'}
+[3.168975] (minirys_msgs) StdoutLine: {'line': b'[ 70%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/rt_test_result__type_support_c.cpp.o\x1b[0m\n'}
+[3.190450] (minirys_msgs) StdoutLine: {'line': b'[ 70%] Built target minirys_msgs__rosidl_typesupport_cpp\n'}
+[3.198079] (minirys_msgs) StdoutLine: {'line': b'[ 70%] Built target minirys_msgs__rosidl_typesupport_introspection_c\n'}
+[3.199218] (minirys_msgs) StdoutLine: {'line': b'[ 71%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c.dir/rosidl_typesupport_fastrtps_c/minirys_msgs/srv/detail/set_pose__type_support_c.cpp.o\x1b[0m\n'}
+[3.204110] (-) TimerEvent: {}
+[3.207050] (minirys_msgs) StdoutLine: {'line': b'[ 73%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/msg/detail/dds_fastrtps/motor_driver_status__type_support.cpp.o\x1b[0m\n'}
+[3.217422] (minirys_msgs) StdoutLine: {'line': b'[ 74%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/msg/detail/dds_fastrtps/rt_test_result__type_support.cpp.o\x1b[0m\n'}
+[3.221743] (minirys_msgs) StdoutLine: {'line': b'[ 76%] \x1b[32mBuilding CXX object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_cpp.dir/rosidl_typesupport_fastrtps_cpp/minirys_msgs/srv/detail/dds_fastrtps/set_pose__type_support.cpp.o\x1b[0m\n'}
+[3.252910] (minirys_msgs) StdoutLine: {'line': b'[ 77%] \x1b[32m\x1b[1mLinking CXX shared library libminirys_msgs__rosidl_typesupport_introspection_cpp.so\x1b[0m\n'}
+[3.304234] (-) TimerEvent: {}
+[3.321989] (minirys_msgs) StdoutLine: {'line': b'[ 77%] Built target minirys_msgs__rosidl_typesupport_introspection_cpp\n'}
+[3.404340] (-) TimerEvent: {}
+[3.504639] (-) TimerEvent: {}
+[3.548711] (minirys_msgs) StdoutLine: {'line': b'[ 78%] \x1b[32m\x1b[1mLinking CXX shared library libminirys_msgs__rosidl_typesupport_fastrtps_c.so\x1b[0m\n'}
+[3.600760] (minirys_msgs) StdoutLine: {'line': b'[ 78%] Built target minirys_msgs__rosidl_typesupport_fastrtps_c\n'}
+[3.604735] (-) TimerEvent: {}
+[3.627749] (minirys_msgs) StdoutLine: {'line': b'[ 80%] \x1b[32m\x1b[1mLinking CXX shared library libminirys_msgs__rosidl_typesupport_fastrtps_cpp.so\x1b[0m\n'}
+[3.674924] (minirys_msgs) StdoutLine: {'line': b'[ 80%] Built target minirys_msgs__rosidl_typesupport_fastrtps_cpp\n'}
+[3.687065] (minirys_msgs) StdoutLine: {'line': b'[ 80%] Built target minirys_msgs\n'}
+[3.699326] (minirys_msgs) StdoutLine: {'line': b'[ 81%] \x1b[34m\x1b[1mGenerating Python code for ROS interfaces\x1b[0m\n'}
+[3.704828] (-) TimerEvent: {}
+[3.805014] (-) TimerEvent: {}
+[3.905219] (-) TimerEvent: {}
+[4.005416] (-) TimerEvent: {}
+[4.105649] (-) TimerEvent: {}
+[4.206160] (-) TimerEvent: {}
+[4.306519] (-) TimerEvent: {}
+[4.406740] (-) TimerEvent: {}
+[4.507130] (-) TimerEvent: {}
+[4.607356] (-) TimerEvent: {}
+[4.660945] (minirys_msgs) StdoutLine: {'line': b'[ 81%] Built target minirys_msgs__py\n'}
+[4.673144] (minirys_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/msg/_angular_pose_s.c.o\x1b[0m\n'}
+[4.673333] (minirys_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/msg/_motor_command_s.c.o\x1b[0m\n'}
+[4.673442] (minirys_msgs) StdoutLine: {'line': b'[ 85%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/msg/_battery_status_s.c.o\x1b[0m\n'}
+[4.673512] (minirys_msgs) StdoutLine: {'line': b'[ 87%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/msg/_motor_driver_status_s.c.o\x1b[0m\n'}
+[4.673584] (minirys_msgs) StdoutLine: {'line': b'[ 88%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/msg/_rt_test_result_s.c.o\x1b[0m\n'}
+[4.673693] (minirys_msgs) StdoutLine: {'line': b'[ 90%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_generator_py.dir/rosidl_generator_py/minirys_msgs/srv/_set_pose_s.c.o\x1b[0m\n'}
+[4.707453] (-) TimerEvent: {}
+[4.778661] (minirys_msgs) StdoutLine: {'line': b'[ 91%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/minirys_msgs/libminirys_msgs__rosidl_generator_py.so\x1b[0m\n'}
+[4.807567] (-) TimerEvent: {}
+[4.808419] (minirys_msgs) StdoutLine: {'line': b'[ 91%] Built target minirys_msgs__rosidl_generator_py\n'}
+[4.821441] (minirys_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_introspection_c__pyext.dir/rosidl_generator_py/minirys_msgs/_minirys_msgs_s.ep.rosidl_typesupport_introspection_c.c.o\x1b[0m\n'}
+[4.821567] (minirys_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_c__pyext.dir/rosidl_generator_py/minirys_msgs/_minirys_msgs_s.ep.rosidl_typesupport_c.c.o\x1b[0m\n'}
+[4.821623] (minirys_msgs) StdoutLine: {'line': b'[ 95%] \x1b[32mBuilding C object CMakeFiles/minirys_msgs__rosidl_typesupport_fastrtps_c__pyext.dir/rosidl_generator_py/minirys_msgs/_minirys_msgs_s.ep.rosidl_typesupport_fastrtps_c.c.o\x1b[0m\n'}
+[4.907884] (-) TimerEvent: {}
+[5.008519] (-) TimerEvent: {}
+[5.109216] (-) TimerEvent: {}
+[5.209662] (-) TimerEvent: {}
+[5.227126] (minirys_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/minirys_msgs/minirys_msgs_s__rosidl_typesupport_fastrtps_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.227266] (minirys_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/minirys_msgs/minirys_msgs_s__rosidl_typesupport_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.227318] (minirys_msgs) StdoutLine: {'line': b'[100%] \x1b[32m\x1b[1mLinking C shared library rosidl_generator_py/minirys_msgs/minirys_msgs_s__rosidl_typesupport_introspection_c.cpython-310-x86_64-linux-gnu.so\x1b[0m\n'}
+[5.255774] (minirys_msgs) StdoutLine: {'line': b'[100%] Built target minirys_msgs__rosidl_typesupport_introspection_c__pyext\n'}
+[5.255972] (minirys_msgs) StdoutLine: {'line': b'[100%] Built target minirys_msgs__rosidl_typesupport_fastrtps_c__pyext\n'}
+[5.256067] (minirys_msgs) StdoutLine: {'line': b'[100%] Built target minirys_msgs__rosidl_typesupport_c__pyext\n'}
+[5.263617] (minirys_msgs) JobEnded: {'identifier': 'minirys_msgs', 'rc': 'SIGINT'}
+[5.274355] (-) EventReactorShutdown: {}

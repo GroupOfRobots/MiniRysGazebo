@@ -1,0 +1,11 @@
+{
+  "package_name": "minirys_msgs",
+  "non_idl_tuples": [
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:msg/AngularPose.msg",
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:msg/BatteryStatus.msg",
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:msg/MotorCommand.msg",
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:msg/MotorDriverStatus.msg",
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:msg/RTTestResult.msg",
+    "/home/mathew/dev_ws/src/MiniRysMsgs-main:srv/SetPose.srv"
+  ]
+}

@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/src/minirys_sim/config/color_list.txt

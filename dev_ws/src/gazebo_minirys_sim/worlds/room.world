@@ -1,3 +1,4 @@
+<?xml version="1.0" ?>
 <sdf version='1.7'>
   <world name='default'>
     <light name='sun' type='directional'>
@@ -36,7 +37,7 @@
             <friction>
               <ode>
                 <mu>100</mu>
-                <mu2>50</mu2>
+                <mu2>100</mu2>
               </ode>
               <torsional>
                 <ode/>
@@ -1956,5 +1957,7 @@
         <projection_type>perspective</projection_type>
       </camera>
     </gui>
+    <!-- <plugin name="gazebo_ros_factory" filename="libgazebo_ros_factory.so"/> -->
+
   </world>
 </sdf>

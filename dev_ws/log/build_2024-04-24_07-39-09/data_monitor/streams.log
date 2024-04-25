@@ -1,0 +1,108 @@
+[0.015s] Invoking command in '/home/mathew/dev_ws/build/data_monitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/data_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/data_monitor
+[0.305s] -- The C compiler identification is GNU 11.4.0
+[0.447s] -- The CXX compiler identification is GNU 11.4.0
+[0.454s] -- Detecting C compiler ABI info
+[0.594s] -- Detecting C compiler ABI info - done
+[0.600s] -- Check for working C compiler: /usr/bin/cc - skipped
+[0.601s] -- Detecting C compile features
+[0.601s] -- Detecting C compile features - done
+[0.603s] -- Detecting CXX compiler ABI info
+[0.659s] -- Detecting CXX compiler ABI info - done
+[0.665s] -- Check for working CXX compiler: /usr/bin/c++ - skipped
+[0.665s] -- Detecting CXX compile features
+[0.666s] -- Detecting CXX compile features - done
+[0.667s] -- Found rclpy: 3.3.12 (/opt/ros/humble/share/rclpy/cmake)
+[0.668s] -- Found ament_cmake: 1.3.8 (/opt/ros/humble/share/ament_cmake/cmake)
+[0.775s] -- Found Python3: /usr/bin/python3 (found version "3.10.12") found components: Interpreter 
+[0.823s] -- Override CMake install command with custom implementation using symlinks instead of copying resources
+[0.846s] -- Found ament_cmake_auto: 1.3.8 (/opt/ros/humble/share/ament_cmake_auto/cmake)
+[0.848s] -- Found rosidl_default_generators: 1.2.0 (/opt/ros/humble/share/rosidl_default_generators/cmake)
+[0.851s] -- Using all available rosidl_typesupport_c: rosidl_typesupport_fastrtps_c;rosidl_typesupport_introspection_c
+[0.857s] -- Found rosidl_adapter: 3.1.5 (/opt/ros/humble/share/rosidl_adapter/cmake)
+[0.895s] -- Using all available rosidl_typesupport_cpp: rosidl_typesupport_fastrtps_cpp;rosidl_typesupport_introspection_cpp
+[1.340s] -- Found rmw_implementation_cmake: 6.1.1 (/opt/ros/humble/share/rmw_implementation_cmake/cmake)
+[1.342s] -- Found rmw_fastrtps_cpp: 6.2.6 (/opt/ros/humble/share/rmw_fastrtps_cpp/cmake)
+[1.413s] -- Found OpenSSL: /usr/lib/x86_64-linux-gnu/libcrypto.so (found version "3.0.2")  
+[1.433s] -- Found FastRTPS: /opt/ros/humble/include  
+[1.466s] -- Using RMW implementation 'rmw_fastrtps_cpp' as default
+[1.474s] -- Looking for pthread.h
+[1.524s] -- Looking for pthread.h - found
+[1.524s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD
+[1.574s] -- Performing Test CMAKE_HAVE_LIBC_PTHREAD - Success
+[1.575s] -- Found Threads: TRUE  
+[1.690s] -- Found PkgConfig: /usr/bin/pkg-config (found version "0.29.2") 
+[1.691s] -- Checking for module 'bullet>=2.82'
+[1.699s] --   Found bullet, version 3.05
+[1.771s] -- Found fcl: /usr/include (found suitable version "0.7.0", minimum required is "0.5.0") 
+[1.807s] -- Found assimp: /usr/include (found version "5.2.0") 
+[1.827s] -- Found DART: /usr/include (Required is at least version "6.6") found components: dart 
+[1.847s] -- Found Boost: /usr/lib/x86_64-linux-gnu/cmake/Boost-1.74.0/BoostConfig.cmake (found suitable version "1.74.0", minimum required is "1.40.0") found components: thread system filesystem program_options regex iostreams date_time 
+[1.861s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found version "3.12.4") 
+[1.864s] -- Looking for ignition-math6 -- found version 6.15.1
+[1.870s] -- Searching for dependencies of ignition-math6
+[1.872s] -- Looking for OGRE...
+[1.872s] -- OGRE_PREFIX_WATCH changed.
+[1.876s] -- Checking for module 'OGRE'
+[1.884s] --   Found OGRE, version 1.9.0
+[1.904s] -- Found Ogre Ghadamon (1.9.0)
+[1.909s] -- Found OGRE: optimized;/usr/lib/x86_64-linux-gnu/libOgreMain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreMain.so
+[1.916s] -- Looking for OGRE_Paging...
+[1.920s] -- Found OGRE_Paging: optimized;/usr/lib/x86_64-linux-gnu/libOgrePaging.so;debug;/usr/lib/x86_64-linux-gnu/libOgrePaging.so
+[1.920s] -- Looking for OGRE_Terrain...
+[1.923s] -- Found OGRE_Terrain: optimized;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so;debug;/usr/lib/x86_64-linux-gnu/libOgreTerrain.so
+[1.923s] -- Looking for OGRE_Property...
+[1.927s] -- Found OGRE_Property: optimized;/usr/lib/x86_64-linux-gnu/libOgreProperty.so;debug;/usr/lib/x86_64-linux-gnu/libOgreProperty.so
+[1.927s] -- Looking for OGRE_RTShaderSystem...
+[1.930s] -- Found OGRE_RTShaderSystem: optimized;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so;debug;/usr/lib/x86_64-linux-gnu/libOgreRTShaderSystem.so
+[1.930s] -- Looking for OGRE_Volume...
+[1.934s] -- Found OGRE_Volume: optimized;/usr/lib/x86_64-linux-gnu/libOgreVolume.so;debug;/usr/lib/x86_64-linux-gnu/libOgreVolume.so
+[1.934s] -- Looking for OGRE_Overlay...
+[1.937s] -- Found OGRE_Overlay: optimized;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so;debug;/usr/lib/x86_64-linux-gnu/libOgreOverlay.so
+[2.011s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.013s] -- Looking for ignition-transport8 -- found version 8.2.1
+[2.013s] -- Searching for dependencies of ignition-transport8
+[2.025s] -- Found Protobuf: /usr/lib/x86_64-linux-gnu/libprotobuf.so (found suitable version "3.12.4", minimum required is "3") 
+[2.032s] -- Config-file not installed for ZeroMQ -- checking for pkg-config
+[2.036s] -- Checking for module 'libzmq >= 4'
+[2.046s] --   Found libzmq , version 4.3.4
+[2.071s] -- Found ZeroMQ: TRUE (Required is at least version "4") 
+[2.074s] -- Checking for module 'uuid'
+[2.082s] --   Found uuid, version 2.37.2
+[2.102s] -- Found UUID: TRUE  
+[2.103s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.104s] -- Searching for dependencies of ignition-msgs5
+[2.116s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.120s] -- Checking for module 'tinyxml2'
+[2.128s] --   Found tinyxml2, version 9.0.0
+[2.149s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.151s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.151s] -- Searching for dependencies of ignition-common3
+[2.151s] -- Looking for dlfcn.h - found
+[2.152s] -- Looking for libdl - found
+[2.153s] -- Found DL: TRUE  
+[2.161s] -- Found tinyobjloader: /usr/lib/x86_64-linux-gnu/cmake/tinyobjloader/tinyobjloader-config.cmake (found version "2.0.0") 
+[2.161s] -- Searching for <ignition-common3> component [graphics]
+[2.163s] -- Looking for ignition-common3-graphics -- found version 3.14.0
+[2.163s] -- Searching for dependencies of ignition-common3-graphics
+[2.163s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.166s] -- Looking for ignition-fuel_tools4 -- found version 4.4.0
+[2.166s] -- Searching for dependencies of ignition-fuel_tools4
+[2.214s] -- Found CURL: /usr/lib/x86_64-linux-gnu/libcurl.so (found version "7.81.0")  
+[2.220s] -- Checking for module 'jsoncpp'
+[2.228s] --   Found jsoncpp, version 1.9.5
+[2.248s] -- Found JSONCPP: TRUE  
+[2.252s] -- Checking for module 'libzip'
+[2.260s] --   Found libzip, version 1.7.3
+[2.281s] -- Found ZIP: TRUE  
+[2.282s] -- Looking for ignition-common3 -- found version 3.14.0
+[2.282s] -- Looking for ignition-math6 -- found version 6.15.1
+[2.283s] -- Looking for ignition-msgs5 -- found version 5.8.1
+[2.286s] -- Gazebo version: 11.10
+[2.287s] -- Checking for module 'tbb'
+[2.296s] --   Found tbb, version 2021.5.0
+[2.335s] -- Found ament_lint_auto: 0.12.10 (/opt/ros/humble/share/ament_lint_auto/cmake)
+[2.343s] -- Configuring done
+[2.349s] -- Generating done
+[2.351s] -- Build files have been written to: /home/mathew/dev_ws/build/data_monitor
+[2.367s] Invoked command in '/home/mathew/dev_ws/build/data_monitor' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/data_monitor -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/data_monitor
+[2.368s] Invoking command in '/home/mathew/dev_ws/build/data_monitor': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mathew/dev_ws/build/data_monitor -- -j16 -l16

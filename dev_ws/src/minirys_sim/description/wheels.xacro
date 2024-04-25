@@ -1,5 +1,13 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
+  
+  <!-- <xacro:property name="my_mu1" value="$(arg wheel_mu1)"/>
+  <xacro:property name="my_mu2" value="$(arg wheel_mu2)"/>
+  <xacro:property name="my_kp" value="$(arg wheel_kp)"/>
+  <xacro:property name="my_kd" value="$(arg wheel_kd)"/>
+  <xacro:property name="my_fdir1" value="0 1 0"/>  -->
+<!-- fdir1 stets direction of the mu1 in reference to the collision frame. We are rotating around z axis so the movement is along y axis -->
+
 
     <!-- LEFT WHEEL LINK -->
     <joint name="left_wheel_joint" type="continuous">
@@ -7,7 +15,8 @@
         <child link="left_wheel"/>
         <origin xyz="0 ${wheel_separation} 0" rpy="-${pi/2} 0 0"/>
         <axis xyz="0 0 1"/>
-        <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/>
+        <!-- <joint_properties damping="1000.0" friction="1000.0"/> -->
+        <!-- <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/> -->
     </joint>
 
     <link name="left_wheel">
@@ -29,6 +38,8 @@
               <ode>
                 <mu>(arg wheel_mu1)</mu>
                 <mu2>(arg wheel_mu2)</mu2>
+                <slip1>1.0</slip1>
+                <slip2>1.0</slip2>
               </ode>
             </friction>
           </surface>
@@ -36,24 +47,37 @@
 
         <inertial>
           <origin xyz="0 0 0" rpy="0 0 0"/>
-          <mass value="0.06705622"/>
-          <inertia ixx="0.00006281" ixy="0.0" ixz="0.0" iyy="0.00006281" iyz="0.0" izz="0.00011530"/>
+          <mass value="0.32705622"/>
+          <inertia ixx="$(arg wheels_ixx)" 
+                   ixy="$(arg wheels_ixy)"
+                   ixz="$(arg wheels_ixz)"
+                   iyy="$(arg wheels_iyy)"
+                   iyz="$(arg wheels_iyz)"
+                   izz="$(arg wheels_izz)"/>
         </inertial>
     </link>
 
     <gazebo reference="left_wheel">
-      <visual>
+      <visual>inertia
           <material>
-              <script>
-                  <uri>${rys_materials_path}</uri>
-                  <name>${gazebo_wheel_material}</name>
-              </script>
+            <ambient>0.10 0.10 0.10</ambient>
+            <diffuse>0.10 0.10 0.10</diffuse>
+            <specular>0.40 0.40 0.40 1.00 5.00</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
       </visual>
+      <!-- <mu1 value="${my_mu1}"/>
+      <mu2 value="${my_mu2}"/>
+      <kp  value="${my_kp}"/>
+      <kd  value="${my_kd}"/> -->
+      
       <mu1>$(arg wheel_mu1)</mu1>
       <mu2>$(arg wheel_mu2)</mu2>
-      <!-- <kp>$(arg wheel_kp)</kp> -->
+      <kp>$(arg wheel_kp)</kp>
       <kd>$(arg wheel_kd)</kd>
+      <slip1>1.0</slip1>
+      <slip2>1.0</slip2>
+      <fdir1 value="0 1 0"/>
       <!-- <gravity>true</gravity> -->
     </gazebo>
 
@@ -93,7 +117,8 @@
       <child link="right_wheel"/>
       <origin xyz="0 -${wheel_separation} 0" rpy="${pi/2} 0 0"/>
       <axis xyz="0 0 -1"/>
-      <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/>
+      <!-- <joint_properties damping="1000.0" friction="1000.0"/> -->
+      <!-- <joint_properties damping="$(arg wheel_joint_dumping)" friction="$(arg wheel_joint_friction)"/> -->
     </joint>
 
     <link name="right_wheel">
@@ -115,6 +140,8 @@
             <ode>
               <mu>(arg wheel_mu1)</mu>
               <mu2>(arg wheel_mu2)</mu2>
+              <slip1>1.0</slip1>
+              <slip2>1.0</slip2>
             </ode>
           </friction>
         </surface>
@@ -122,25 +149,39 @@
 
       <inertial>
         <origin xyz="0 0 0" rpy="0 0 0"/>
-        <mass value="0.06705622"/>
-        <inertia ixx="0.00006281" ixy="0.0" ixz="0.0" iyy="0.00006281" iyz="0.0" izz="0.00011530"/>
+        <mass value="0.32705622"/>
+        <inertia ixx="$(arg wheels_ixx)" 
+                 ixy="$(arg wheels_ixy)"
+                 ixz="$(arg wheels_ixz)"
+                 iyy="$(arg wheels_iyy)"
+                 iyz="$(arg wheels_iyz)"
+                 izz="$(arg wheels_izz)"/>
       </inertial>
       
     </link>
 
+
     <gazebo reference="right_wheel">
       <visual>
           <material>
-              <script>
-                  <uri>${rys_materials_path}</uri>
-                  <name>${gazebo_wheel_material}</name>
-              </script>
+            <ambient>0.10 0.10 0.10</ambient>
+            <diffuse>0.10 0.10 0.10</diffuse>
+            <specular>0.40 0.40 0.40 1.00 5.00</specular>
+            <emissive>0 0 0 1</emissive>
           </material>
       </visual>
+      <!-- <mu1 value="${my_mu1}"/>
+      <mu2 value="${my_mu2}"/>
+      <kp  value="${my_kp}"/>
+      <kd  value="${my_kd}"/>
+       -->
       <mu1>$(arg wheel_mu1)</mu1>
       <mu2>$(arg wheel_mu2)</mu2>
-      <!-- <kp>$(arg wheel_kp)</kp> -->
+      <kp>$(arg wheel_kp)</kp>
       <kd>$(arg wheel_kd)</kd>
+      <slip1>1.0</slip1>
+      <slip2>1.0</slip2>
+      <fdir1 value="0 1 0"/>
       <!-- <gravity>true</gravity> -->
     </gazebo>
 

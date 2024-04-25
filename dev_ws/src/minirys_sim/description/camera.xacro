@@ -25,12 +25,16 @@
             </geometry>
         </collision>
 
-        <inertial>
+        <!-- <inertial>
             <origin xyz="0 0 0" rpy="0 0 0"/>
             <mass value="0.00003215"/>
-            <inertia ixx="0.00002345" ixy="0.00000000" ixz="0.00000038" 
-                     iyy="0.00002166" iyz="0.00000000" izz="0.00001207"/>
-        </inertial>
+            <inertia ixx="0.00002345" 
+                     ixy="0.00000000" 
+                     ixz="0.00000038" 
+                     iyy="0.00002166" 
+                     iyz="0.00000000" 
+                     izz="0.00001207"/>
+        </inertial> -->
 
     </link>
     
@@ -66,10 +70,10 @@
     <gazebo reference="camera_base">
         <visual>
             <material>
-                <script>
-                    <uri>${rys_materials_path}</uri>
-                    <name>${gazebo_camera_base_material}</name>
-                </script>
+                <ambient>0.20 0.20 0.20</ambient>
+                <diffuse>0.20 0.20 0.20</diffuse>
+                <specular>0.40 0.40 0.40 1.00 5.00</specular>
+                <emissive>0 0 0 1</emissive>
             </material>
         </visual>
     </gazebo>
@@ -131,10 +135,10 @@
     <gazebo reference="camera_PCB">
         <visual>
             <material>
-                <script>
-                    <uri>${rys_materials_path}</uri>
-                    <name>${gazebo_camera_PCB_material}</name>
-                </script>
+                <ambient>0.10 0.10 0.10</ambient>
+                <diffuse>0.10 0.10 0.10</diffuse>
+                <specular>0.40 0.40 0.40 1.00 5.00</specular>
+                <emissive>0 0 0 1</emissive>
             </material>
         </visual>
     </gazebo>
@@ -160,10 +164,10 @@
     <gazebo reference="lens">
         <visual>
             <material>
-                <script>
-                    <uri>${rys_materials_path}</uri>
-                    <name>rys/lens</name>
-                </script>
+                <ambient>0.75 0.75 0.8</ambient>
+                <diffuse>0.75 0.75 0.8</diffuse>
+                <specular>0.75 0.75 0.8 0.3 5</specular>
+                <emissive>0 0 0 1</emissive>
             </material>
         </visual>
     </gazebo>

@@ -1,7 +1,6 @@
 <?xml version="1.0"?>
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro"  name="robot">
 
-
     <!-- ARGUMENTS -->
         <!-- VISUALS -->
         <xacro:arg name="color_code" default="dark_red"/>
@@ -10,7 +9,6 @@
         <xacro:arg name="color_code_B" default="1.0"/>
         <xacro:arg name="color_code_A" default="1.0"/>
 
-
         <xacro:arg name="label_enabled" default="true"/>
         <xacro:arg name="label_x" default="0.13"/> <!--0.13-->
         <xacro:arg name="label_y" default="0.05"/> <!--0.05-->
@@ -18,14 +16,26 @@
             <xacro:arg name="horizontal_sensor_visibility" default="false"/>
             <xacro:arg name="vertical_sensor_visibility" default="false"/>
             <xacro:arg name="all_sensor_visibility" default="false"/>
-            <xacro:arg name="none_sensor_visibility" default="true"/>
 
-        <!-- PHYSICS -->
+        <!-- CHASSIS PHYSICS -->
         <xacro:arg name="chassis_mu1" default="0.1"/> <!--SURFACE FRICTION-->
         <xacro:arg name="chassis_mu2" default="0.1"/> <!--SURFACE FRICTION-->
         <xacro:arg name="chassis_kp" default="0.7"/>  <!--STIFFNESS-->
         <xacro:arg name="chassis_kd" default="0.05"/> <!--DAMPING-->
-        
+            
+            <!-- CHASSIS INERTIA -->
+            <xacro:arg name="chassis_mx" default="0.000001"/>
+            <xacro:arg name="chassis_my" default="0.000109"/>
+            <xacro:arg name="chassis_mz" default="0.011152"/>
+            
+            <xacro:arg name="chassis_ixx" default="0.00149038"/>
+            <xacro:arg name="chassis_ixy" default="-0.00000016"/>
+            <xacro:arg name="chassis_ixz" default="0.00000155"/>
+            <xacro:arg name="chassis_iyy" default="0.00084463"/>
+            <xacro:arg name="chassis_iyz" default="-0.00000170"/>
+            <xacro:arg name="chassis_izz" default="0.00108896"/>
+
+        <!-- WHEELS PHYSICS -->
         <xacro:arg name="wheel_mu1" default="10"/>    <!--SURFACE FRICTION-->
         <xacro:arg name="wheel_mu2" default="10"/>    <!--SURFACE FRICTION-->
         <xacro:arg name="wheel_kp" default="0.7"/>      <!--STIFFNESS-->
@@ -33,8 +43,16 @@
 
         <xacro:arg name="wheel_joint_dumping" default="0.01"/> <!--JOINT DAMPING-->
         <xacro:arg name="wheel_joint_friction" default="0.1"/> <!--JOINT FRICTION-->
-        
-        <!-- ROS -->
+            
+            <!-- CHASSIS INERTIA -->
+            <xacro:arg name="wheels_ixx" default="0.00006281"/>
+            <xacro:arg name="wheels_ixy" default="0.0"/>
+            <xacro:arg name="wheels_ixz" default="0.0"/>
+            <xacro:arg name="wheels_iyy" default="0.00006281"/>
+            <xacro:arg name="wheels_iyz" default="0.0"/>
+            <xacro:arg name="wheels_izz" default="0.00011530"/>
+
+            <!-- ROS -->
         <xacro:arg name="robot_namespace" default="robot"/>
         <xacro:arg name="package_path" default=""/>
         
@@ -42,10 +60,9 @@
         <xacro:arg name="horizontal_sensor_visibility" default="false"/>
         <xacro:arg name="vertical_sensor_visibility" default="false"/>
         <xacro:arg name="all_sensor_visibility" default="false"/>
-        <xacro:arg name="none_sensor_visibility" default="true"/>
         <xacro:arg name="camera_visibility" default="false"/>
         
-        <xacro:arg name="camera_enabled" default="true"/>
+        <xacro:arg name="camera_enabled" default="True"/>
         <xacro:arg name="TOF_FOV_angle" default="0.001"/> <!--FOV - Field of View-->
         <xacro:arg name="TOF_range" default="2"/>
         <xacro:arg name="TOF_enabled" default="false"/>
@@ -54,10 +71,11 @@
         <!-- CONFIG -->
             <xacro:include filename="materials.xacro"/>
             <xacro:include filename="variables.xacro"/>
+
         <!-- MACRO -->
-            <xacro:include filename="macros.xacro"/>        
+            <xacro:include filename="macros.xacro"/>   
+
         <!-- ROBOT -->
-            <!-- <xacro:include filename="ros2_control_gazebo.xacro"/> -->
             <xacro:include filename="diff_control.xacro"/>
 
             <xacro:include filename="chassis.xacro"/>

@@ -1,0 +1,21 @@
+<?xml version="1.0" ?>
+<drive_config>
+	<group name="Group1">
+		<robots>robot1</robots>
+		<mode>1</mode>
+		<sequence>0,0.5,5,0,0,2,5,0.5,5,0,0,2</sequence>
+		<loop>-1</loop>
+	</group>
+	<group name="Group2">
+		<robots>robot2</robots>
+		<mode>0</mode>
+		<sequence> ,0,0</sequence>
+		<loop>0</loop>
+	</group>
+	<group name="Group3">
+		<robots>robot3</robots>
+		<mode>2</mode>
+		<sequence> ,0,0</sequence>
+		<loop>0</loop>
+	</group>
+</drive_config>

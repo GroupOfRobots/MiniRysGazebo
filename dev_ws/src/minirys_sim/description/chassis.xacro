@@ -2,17 +2,9 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     <!-- BASE LINK -->
-        <!-- <link name="base_footprint"></link> -->
         <link name="base_link"></link>
 
-        <!-- <joint name="base_footprint_joint" type="fixed">
-            <parent link="base_link"/>
-            <child link="base_footprint"/>
-            <origin xyz="0 0 -${wheel_radius}"/>  
-        </joint>
-     -->
     <!-- SKELETON LINK -->
-
         <joint name="chassis_joint" type="fixed">
             <parent link="base_link"/>
             <child link="chassis"/>
@@ -30,16 +22,62 @@
 
             <!-- COLISION -->
             <collision name='chassis_box'>
-                <origin xyz="0 0 0.0385" rpy="0 0 0"/>
+                <origin xyz="0 0 0.03515" rpy="0 0 0"/>
                 <geometry>
-                    <box size="0.07 0.116 0.13"/>
+                    <box size="0.07 0.116 0.12"/>
                 </geometry>
+                <surface>
+                    <friction>
+                        <bounce>
+                            <restitution_coefficient>0</restitution_coefficient>
+                            <threshold>1e+06</threshold>
+                        </bounce>
+                      <ode>
+                        <mu>$(arg chassis_mu1)</mu>
+                        <mu2>$(arg chassis_mu2)</mu2>
+                        <kp>$(arg chassis_kp)</kp>
+                        <kd>$(arg chassis_kd)</kd>
+                        <slip1>1.0</slip1>
+                        <slip2>1.0</slip2>
+                      </ode>
+                    </friction>
+                  </surface>
             </collision>
                 
             <collision name='side_bumper'>
                 <origin xyz="0 0 0.09" rpy="0 0 0"/>
                 <geometry>
                     <cylinder radius="0.056" length="0.01"/>
+                </geometry>
+                <surface>
+                    <friction>
+                        <bounce>
+                            <restitution_coefficient>0</restitution_coefficient>
+                            <threshold>1e+06</threshold>
+                        </bounce>
+                      <ode>
+                        <mu>$(arg chassis_mu1)</mu>
+                        <mu2>$(arg chassis_mu2)</mu2>
+                        <kp>$(arg chassis_kp)</kp>
+                        <kd>$(arg chassis_kd)</kd>
+                        <slip1>1.0</slip1>
+                        <slip2>1.0</slip2>
+                      </ode>
+                    </friction>
+                  </surface>
+            </collision>
+
+            <collision name='front_battery'>
+                <origin xyz="0.036 0 0" rpy="${pi/2} 0 0"/>
+                <geometry>
+                    <cylinder radius="0.01" length="0.071"/>
+                </geometry>
+            </collision>
+
+            <collision name='back_battery'>
+                <origin xyz="-0.038 0 0" rpy="${pi/2} 0 0"/>
+                <geometry>
+                    <cylinder radius="0.01" length="0.071"/>
                 </geometry>
             </collision>
 
@@ -51,28 +89,37 @@
             </collision>
             
             <inertial>
-                <origin xyz="0 0 0" rpy="0 0 0"/>
-                <mass value="0.75202927"/>
-                <inertia ixx="0.00149038" ixy="-0.00000016" ixz="0.00000155" 
-                         iyy="0.00084463" iyz="-0.00000170" izz="0.00108896"/>
+                <origin xyz="$(arg chassis_mx) $(arg chassis_my) $(arg chassis_mz)" rpy="0 0 0"/>
+                <mass value="1.75203002"/>
+                <inertia ixx="$(arg chassis_ixx)"
+                         ixy="$(arg chassis_ixy)"
+                         ixz="$(arg chassis_ixz)" 
+                         iyy="$(arg chassis_iyy)"
+                         iyz="$(arg chassis_iyz)"
+                         izz="$(arg chassis_izz)"/>
             </inertial>
         </link>
 
         <gazebo reference="chassis">
             <visual>
                 <material>
-                    <script>
-                        <uri>${rys_materials_path}</uri>
-                        <name>${gazebo_skeleton_material}</name>
-                    </script>
+                        <ambient>0.10 0.10 0.10</ambient>
+                        <diffuse>0.10 0.10 0.10</diffuse>
+                        <specular>0.40 0.40 0.40 1.00 5.00</specular>
+                        <emissive>0 0 0 1</emissive>
                 </material>
             </visual>
+            <!-- <soft_cfm>0</soft_cfm>
+            <soft_erp>0.2</soft_erp> -->
             <mu1>$(arg chassis_mu1)</mu1>
             <mu2>$(arg chassis_mu2)</mu2>
             <kp>$(arg chassis_kp)</kp>
             <kd>$(arg chassis_kd)</kd>
+            <slip1>1.0</slip1>
+            <slip2>1.0</slip2>
+            <fdir1 value="0 0 1"/>
             <selfCollide>false</selfCollide>
-            <gravity>true</gravity>
+            <!-- <gravity>true</gravity> -->
         </gazebo>
 
     <!-- VISUAL LINKS -->
@@ -124,10 +171,10 @@
         <gazebo reference="internal_components">
             <visual>
                 <material>
-                    <script>
-                        <uri>${rys_materials_path}</uri>
-                        <name>${gazebo_internal_components_material}</name>
-                    </script>
+                    <ambient>0.50 0.50 0.50</ambient>
+                    <diffuse>0.75 0.75 0.75</diffuse>
+                    <specular>0.90 0.90 0.90 50.00 50.00</specular>
+                    <emissive>0 0 0 1</emissive>
                 </material>
             </visual>
         </gazebo>
@@ -152,10 +199,10 @@
         <gazebo reference="batteries">
             <visual>
                 <material>
-                    <script>
-                        <uri>${rys_materials_path}</uri>
-                        <name>${gazebo_batteries_material}</name>
-                    </script>
+                    <ambient>0.40 0.00 0.80</ambient>
+                    <diffuse>0.00 0.00 0.50</diffuse>
+                    <specular>0.40 0.40 0.40 1.00 5.00</specular>
+                    <emissive>0 0 0 1</emissive>
                 </material>
             </visual>
         </gazebo>

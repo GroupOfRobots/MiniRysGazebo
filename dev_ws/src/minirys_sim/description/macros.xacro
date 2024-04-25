@@ -2,7 +2,7 @@
 <robot xmlns:xacro="http://www.ros.org/wiki/xacro">
 
     
-    <xacro:macro name="gazebo_single_tof_sensor" params="frame name on visible material">
+    <xacro:macro name="gazebo_single_tof_sensor" params="frame name on visible">
         <gazebo reference="${frame}">
             <sensor name="${name}" type="ray">
                 <always_on>${on}</always_on>
@@ -35,7 +35,7 @@
                         <stddev>0.01</stddev>
                     </noise>
                 </ray>
-                <plugin name="gazebo_ray" filename="libgazebo_ros_ray_sensor.so">
+                <plugin name="${name}_gazebo_ray" filename="libgazebo_ros_ray_sensor.so">
                     <ros>
                         <namespace>/$(arg robot_namespace)/distance</namespace>
                         <remapping>~/out:=${name}</remapping>
@@ -48,8 +48,10 @@
             <visual>
                 <material>
                     <script>
-                        <uri>${rys_materials_path}</uri>
-                        <name>${material}</name>
+                        <ambient>1.00 0.20 0.20</ambient>
+                        <diffuse>0.60 0.00 0.00</diffuse>
+                        <specular>0.40 0.40 0.40 1.00 5.00</specular>
+                        <emissive>0 0 0 1</emissive>
                     </script>
                 </material>
             </visual>

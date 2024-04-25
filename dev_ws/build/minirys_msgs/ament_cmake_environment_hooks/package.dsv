@@ -1,0 +1,4 @@
+source;share/minirys_msgs/local_setup.bash
+source;share/minirys_msgs/local_setup.dsv
+source;share/minirys_msgs/local_setup.sh
+source;share/minirys_msgs/local_setup.zsh

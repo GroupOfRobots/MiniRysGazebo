@@ -4,51 +4,41 @@
     <xacro:property name="color_code_material" value="custom_color"/>
     
     <xacro:property name="batteries_material" value="purple"/>
-    <xacro:property name="gazebo_batteries_material" value="rys/purple"/>
-
 
     <!-- MATERIALS -->
         <!-- WHEEL -->
         <xacro:property name="tire_material" value="${color_code_material}"/>
         <xacro:property name="wheel_material" value="black"/>
 
-        <xacro:property name="gazebo_wheel_material" value="rys/black"/>
     <!-- SENSORS -->
         <!-- TOF -->
             <xacro:property name="tof_material" value="dark_red"/>
-            <xacro:property name="gazebo_tof_material" value="rys/red"/>
         
         <!-- CAMERA -->
-            <xacro:property name="camera_base_material" value="dark_grey"/>
+            <xacro:property name="camera_base_material" value="dark_gray"/>
             <xacro:property name="camera_PCB_material" value="black"/>
             <xacro:property name="camera_bumper_material" value="${color_code_material}"/>
             <xacro:property name="camera_lens_material" value="lens"/>
 
-            <xacro:property name="gazebo_camera_base_material" value="rys/dark_gray"/>
-            <xacro:property name="gazebo_camera_PCB_material" value="rys/black"/>
-            <xacro:property name="gazebo_camera_lens_material" value="rys/lens"/>
-
     <!-- CHASSIS -->
         <xacro:property name="skeleton_material" value="black"/>
         <xacro:property name="fronts_material" value="${color_code_material}"/>
-        <xacro:property name="internal_components_material" value="grey"/>
+        <xacro:property name="internal_components_material" value="gray"/>
         
-        <xacro:property name="gazebo_skeleton_material" value="rys/black"/>
-        <xacro:property name="gazebo_internal_components_material" value="rys/light_gray"/>
-
-        <xacro:if value="$(arg camera_enabled)">
-            <xacro:property name="label_hight" value="0.19"/>
-        </xacro:if>
-        <xacro:unless value="$(arg camera_enabled)">
-            <xacro:property name="label_hight" value="0.16"/>
-        </xacro:unless>
-
+ 
     <!-- VARIABLES -->
         <!-- ROBOT STRUCTURE -->
             <xacro:property name="wheel_separation" value="0.0625"/>
             <xacro:property name="wheel_radius" value="0.056"/>
             <xacro:property name="wheel_width" value="0.0145"/>
-            
+
+            <xacro:if value="$(arg camera_enabled)">
+                <xacro:property name="label_hight" value="0.19"/>
+            </xacro:if>
+            <xacro:unless value="$(arg camera_enabled)">
+                <xacro:property name="label_hight" value="0.16"/>
+            </xacro:unless>
+    
         <!-- SENSORS -->
             <xacro:if value="$(arg horizontal_sensor_visibility)">
                 <xacro:property name="up_down_sensor_visibility" value="true"/>
@@ -56,27 +46,23 @@
                 <xacro:property name="front_back_sensor_visibility" value="false"/>
             </xacro:if>
             <!-- <xacro:unless value="$(arg horizontal_sensor_visibility)"></xacro:unless> -->
-
             <xacro:if value="$(arg vertical_sensor_visibility)">
                 <xacro:property name="up_down_sensor_visibility" value="false"/>
                 <xacro:property name="right_left_sensor_visibility" value="true"/>
                 <xacro:property name="front_back_sensor_visibility" value="true"/>
             </xacro:if>
             <!-- <xacro:unless value="$(arg vertical_sensor_visibility)"></xacro:unless> -->
-
             <xacro:if value="$(arg all_sensor_visibility)">
                 <xacro:property name="up_down_sensor_visibility" value="true"/>
                 <xacro:property name="right_left_sensor_visibility" value="true"/>
                 <xacro:property name="front_back_sensor_visibility" value="true"/>
             </xacro:if>
-            <!-- <xacro:unless value="$(arg all_sensor_visibility)"></xacro:unless> -->
-
-            <xacro:if value="$(arg none_sensor_visibility)">
+            <xacro:unless value="$(arg all_sensor_visibility)">
                 <xacro:property name="up_down_sensor_visibility" value="false"/>
                 <xacro:property name="right_left_sensor_visibility" value="false"/>
                 <xacro:property name="front_back_sensor_visibility" value="false"/>
-            </xacro:if>
-            <!-- <xacro:unless value="$(arg none_sensor_visibility)"></xacro:unless> -->
+            </xacro:unless>
+            <!-- <xacro:unless value="$(arg all_sensor_visibility)"></xacro:unless> -->
             
     <!-- FILE PATHS -->
         <!-- GAZEBOMATERIALS -->

@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/build/minirys_sim/rosidl_generator_c/minirys_sim/srv/detail/close_menager__functions.h

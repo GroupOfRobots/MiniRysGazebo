@@ -1,2 +1,0 @@
-Invoking command in '/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg -- -j16 -l16
-Invoked command in '/home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg' returned '2': CMAKE_PREFIX_PATH=/opt/ros/foxy /usr/bin/cmake --build /home/mathew/ROS_files/Workspaces/minirys_sim_ws/build/minirys_sim_pkg -- -j16 -l16

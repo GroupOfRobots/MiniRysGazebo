@@ -203,3 +203,1584 @@ material rys/robot12
         }
     }
 }
+
+material rys/robot13
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot13.png
+            }
+        }
+    }
+}
+
+material rys/robot14
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot14.png
+            }
+        }
+    }
+}
+
+material rys/robot15
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot15.png
+            }
+        }
+    }
+}
+
+material rys/robot16
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot16.png
+            }
+        }
+    }
+}
+
+material rys/robot17
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot17.png
+            }
+        }
+    }
+}
+
+material rys/robot18
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot18.png
+            }
+        }
+    }
+}
+
+material rys/robot19
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot19.png
+            }
+        }
+    }
+}
+
+material rys/robot20
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot20.png
+            }
+        }
+    }
+}
+
+material rys/robot21
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot21.png
+            }
+        }
+    }
+}
+
+material rys/robot22
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot22.png
+            }
+        }
+    }
+}
+
+material rys/robot23
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot23.png
+            }
+        }
+    }
+}
+
+material rys/robot24
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot24.png
+            }
+        }
+    }
+}
+
+material rys/robot25
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot25.png
+            }
+        }
+    }
+}
+
+material rys/robot26
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot26.png
+            }
+        }
+    }
+}
+
+material rys/robot27
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot27.png
+            }
+        }
+    }
+}
+
+material rys/robot28
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot28.png
+            }
+        }
+    }
+}
+
+material rys/robot29
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot29.png
+            }
+        }
+    }
+}
+
+material rys/robot30
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot30.png
+            }
+        }
+    }
+}
+
+material rys/robot31
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot31.png
+            }
+        }
+    }
+}
+
+material rys/robot32
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot32.png
+            }
+        }
+    }
+}
+
+material rys/robot33
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot33.png
+            }
+        }
+    }
+}
+
+material rys/robot34
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot34.png
+            }
+        }
+    }
+}
+
+material rys/robot35
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot35.png
+            }
+        }
+    }
+}
+
+material rys/robot36
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot36.png
+            }
+        }
+    }
+}
+
+material rys/robot37
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot37.png
+            }
+        }
+    }
+}
+
+material rys/robot38
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot38.png
+            }
+        }
+    }
+}
+
+material rys/robot39
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot39.png
+            }
+        }
+    }
+}
+
+material rys/robot40
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot40.png
+            }
+        }
+    }
+}
+
+material rys/robot41
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot41.png
+            }
+        }
+    }
+}
+
+material rys/robot42
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot42.png
+            }
+        }
+    }
+}
+
+material rys/robot43
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot43.png
+            }
+        }
+    }
+}
+
+material rys/robot44
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot44.png
+            }
+        }
+    }
+}
+
+material rys/robot45
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot45.png
+            }
+        }
+    }
+}
+
+material rys/robot46
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot46.png
+            }
+        }
+    }
+}
+
+material rys/robot47
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot47.png
+            }
+        }
+    }
+}
+
+material rys/robot48
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot48.png
+            }
+        }
+    }
+}
+
+material rys/robot49
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot49.png
+            }
+        }
+    }
+}
+
+material rys/robot50
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot50.png
+            }
+        }
+    }
+}
+
+material rys/robot51
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot51.png
+            }
+        }
+    }
+}
+
+material rys/robot52
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot52.png
+            }
+        }
+    }
+}
+
+material rys/robot53
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot53.png
+            }
+        }
+    }
+}
+
+material rys/robot54
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot54.png
+            }
+        }
+    }
+}
+
+material rys/robot55
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot55.png
+            }
+        }
+    }
+}
+
+material rys/robot56
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot56.png
+            }
+        }
+    }
+}
+
+material rys/robot57
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot57.png
+            }
+        }
+    }
+}
+
+material rys/robot58
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot58.png
+            }
+        }
+    }
+}
+
+material rys/robot59
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot59.png
+            }
+        }
+    }
+}
+
+material rys/robot60
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot60.png
+            }
+        }
+    }
+}
+
+material rys/robot61
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot61.png
+            }
+        }
+    }
+}
+
+material rys/robot62
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot62.png
+            }
+        }
+    }
+}
+
+material rys/robot63
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot63.png
+            }
+        }
+    }
+}
+
+material rys/robot64
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot64.png
+            }
+        }
+    }
+}
+
+material rys/robot65
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot65.png
+            }
+        }
+    }
+}
+
+material rys/robot66
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot66.png
+            }
+        }
+    }
+}
+
+material rys/robot67
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot67.png
+            }
+        }
+    }
+}
+
+material rys/robot68
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot68.png
+            }
+        }
+    }
+}
+
+material rys/robot69
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot69.png
+            }
+        }
+    }
+}
+
+material rys/robot70
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot70.png
+            }
+        }
+    }
+}
+
+material rys/robot71
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot71.png
+            }
+        }
+    }
+}
+
+material rys/robot72
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot72.png
+            }
+        }
+    }
+}
+
+material rys/robot73
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot73.png
+            }
+        }
+    }
+}
+
+material rys/robot74
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot74.png
+            }
+        }
+    }
+}
+
+material rys/robot75
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot75.png
+            }
+        }
+    }
+}
+
+material rys/robot76
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot76.png
+            }
+        }
+    }
+}
+
+material rys/robot77
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot77.png
+            }
+        }
+    }
+}
+
+material rys/robot78
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot78.png
+            }
+        }
+    }
+}
+
+material rys/robot79
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot79.png
+            }
+        }
+    }
+}
+
+material rys/robot80
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot80.png
+            }
+        }
+    }
+}
+
+material rys/robot81
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot81.png
+            }
+        }
+    }
+}
+
+material rys/robot82
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot82.png
+            }
+        }
+    }
+}
+
+material rys/robot83
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot83.png
+            }
+        }
+    }
+}
+
+material rys/robot84
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot84.png
+            }
+        }
+    }
+}
+
+material rys/robot85
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot85.png
+            }
+        }
+    }
+}
+
+material rys/robot86
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot86.png
+            }
+        }
+    }
+}
+
+material rys/robot87
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot87.png
+            }
+        }
+    }
+}
+
+material rys/robot88
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot88.png
+            }
+        }
+    }
+}
+
+material rys/robot89
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot89.png
+            }
+        }
+    }
+}
+
+material rys/robot90
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot90.png
+            }
+        }
+    }
+}
+
+material rys/robot91
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot91.png
+            }
+        }
+    }
+}
+
+material rys/robot92
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot92.png
+            }
+        }
+    }
+}
+
+material rys/robot93
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot93.png
+            }
+        }
+    }
+}
+
+material rys/robot94
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot94.png
+            }
+        }
+    }
+}
+
+material rys/robot95
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot95.png
+            }
+        }
+    }
+}
+
+material rys/robot96
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot96.png
+            }
+        }
+    }
+}
+
+material rys/robot97
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot97.png
+            }
+        }
+    }
+}
+
+material rys/robot98
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot98.png
+            }
+        }
+    }
+}
+
+material rys/robot99
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot99.png
+            }
+        }
+    }
+}
+
+material rys/robot100
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot100.png
+            }
+        }
+    }
+}
+
+material rys/robot101
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot101.png
+            }
+        }
+    }
+}
+
+material rys/robot102
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot102.png
+            }
+        }
+    }
+}
+
+material rys/robot103
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot103.png
+            }
+        }
+    }
+}
+
+material rys/robot104
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot104.png
+            }
+        }
+    }
+}
+
+material rys/robot105
+{
+    technique
+    {
+        pass
+        {
+            scene_blend alpha_blend
+            depth_write off
+            lighting off
+            texture_unit
+            {
+                texture textures/robot105.png
+            }
+        }
+    }
+}

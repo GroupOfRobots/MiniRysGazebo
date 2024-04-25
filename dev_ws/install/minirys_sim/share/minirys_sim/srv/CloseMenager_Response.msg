@@ -1,0 +1,1 @@
+/home/mathew/dev_ws/build/minirys_sim/rosidl_cmake/srv/CloseMenager_Response.msg

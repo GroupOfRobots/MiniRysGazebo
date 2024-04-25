@@ -1,0 +1,28 @@
+// generated from rosidl_adapter/resource/msg.idl.em
+// with input from minirys_msgs/msg/RTTestResult.msg
+// generated code does not contain a copyright notice
+
+#include "builtin_interfaces/msg/Time.idl"
+
+module minirys_msgs {
+  module msg {
+    @verbatim (language="comment", text=
+      "Based on the RttestResult from the demos/pendulum_msgs package:" "\n"
+      "https://github.com/ros2/demos/blob/master/pendulum_msgs/msg/RttestResults.msg")
+    struct RTTestResult {
+      builtin_interfaces::msg::Time stamp;
+
+      uint64 current_latency;
+
+      double mean_latency;
+
+      uint64 min_latency;
+
+      uint64 max_latency;
+
+      uint64 minor_pagefaults;
+
+      uint64 major_pagefaults;
+    };
+  };
+};

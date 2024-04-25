@@ -1,0 +1,44 @@
+[0.010s] Invoking command in '/home/mathew/dev_ws/build/gazebo_minirys_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mathew/dev_ws/build/gazebo_minirys_sim -- -j16 -l16
+[0.068s] Built target ament_cmake_python_symlink_gazebo_minirys_sim
+[0.249s] running egg_info
+[0.249s] writing gazebo_minirys_sim.egg-info/PKG-INFO
+[0.249s] writing dependency_links to gazebo_minirys_sim.egg-info/dependency_links.txt
+[0.249s] writing top-level names to gazebo_minirys_sim.egg-info/top_level.txt
+[0.252s] reading manifest file 'gazebo_minirys_sim.egg-info/SOURCES.txt'
+[0.252s] writing manifest file 'gazebo_minirys_sim.egg-info/SOURCES.txt'
+[0.269s] Built target ament_cmake_python_build_gazebo_minirys_sim_egg
+[0.276s] Invoked command in '/home/mathew/dev_ws/build/gazebo_minirys_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --build /home/mathew/dev_ws/build/gazebo_minirys_sim -- -j16 -l16
+[0.292s] Invoking command in '/home/mathew/dev_ws/build/gazebo_minirys_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mathew/dev_ws/build/gazebo_minirys_sim
+[0.296s] -- Install configuration: ""
+[0.296s] -- Execute custom install script
+[0.296s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/launch/world.launch.py
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/empty.world
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room.world
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room_minirys_sim/model.config
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/room_minirys_sim/model.sdf
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/short_room/model.config
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/worlds/short_room/model.sdf
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/pythonpath.sh
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/pythonpath.dsv
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/PKG-INFO
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/SOURCES.txt
+[0.297s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/dependency_links.txt
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim-0.0.0-py3.10.egg-info/top_level.txt
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim/__init__.py
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/package_run_dependencies/gazebo_minirys_sim
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/parent_prefix_path/gazebo_minirys_sim
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/ament_prefix_path.sh
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/ament_prefix_path.dsv
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/path.sh
+[0.298s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/environment/path.dsv
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.bash
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.sh
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.zsh
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/local_setup.dsv
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/package.dsv
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/ament_index/resource_index/packages/gazebo_minirys_sim
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/cmake/gazebo_minirys_simConfig.cmake
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/cmake/gazebo_minirys_simConfig-version.cmake
+[0.299s] -- Up-to-date symlink: /home/mathew/dev_ws/install/gazebo_minirys_sim/share/gazebo_minirys_sim/package.xml
+[0.320s] Listing '/home/mathew/dev_ws/install/gazebo_minirys_sim/local/lib/python3.10/dist-packages/gazebo_minirys_sim'...
+[0.325s] Invoked command in '/home/mathew/dev_ws/build/gazebo_minirys_sim' returned '0': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake --install /home/mathew/dev_ws/build/gazebo_minirys_sim
