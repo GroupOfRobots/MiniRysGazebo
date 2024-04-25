@@ -1,6 +1,0 @@
-setup.py
-gazebo_minirys_sim/__init__.py
-gazebo_minirys_sim.egg-info/PKG-INFO
-gazebo_minirys_sim.egg-info/SOURCES.txt
-gazebo_minirys_sim.egg-info/dependency_links.txt
-gazebo_minirys_sim.egg-info/top_level.txt

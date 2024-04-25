@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_c/minirys_msgs/msg/detail/angular_pose__type_support.h

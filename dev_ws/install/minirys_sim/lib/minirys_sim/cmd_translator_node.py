@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/src/minirys_sim/scripts/cmd_translator_node.py

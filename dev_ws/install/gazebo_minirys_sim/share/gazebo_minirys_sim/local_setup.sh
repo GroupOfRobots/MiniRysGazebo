@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/gazebo_minirys_sim/ament_cmake_environment_hooks/local_setup.sh

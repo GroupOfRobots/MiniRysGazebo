@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_py/minirys_msgs/__init__.py

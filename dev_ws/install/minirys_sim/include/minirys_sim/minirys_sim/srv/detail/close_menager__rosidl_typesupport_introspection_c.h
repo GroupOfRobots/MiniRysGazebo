@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_sim/rosidl_typesupport_introspection_c/minirys_sim/srv/detail/close_menager__rosidl_typesupport_introspection_c.h

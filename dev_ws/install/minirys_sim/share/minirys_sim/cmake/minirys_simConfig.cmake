@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_sim/ament_cmake_core/minirys_simConfig.cmake

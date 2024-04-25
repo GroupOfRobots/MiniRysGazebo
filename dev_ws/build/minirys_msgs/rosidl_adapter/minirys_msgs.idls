@@ -1,6 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:msg/AngularPose.idl
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:msg/BatteryStatus.idl
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:msg/MotorCommand.idl
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:msg/MotorDriverStatus.idl
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:msg/RTTestResult.idl
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_adapter/minirys_msgs:srv/SetPose.idl

@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_py/minirys_msgs/_minirys_msgs_s.ep.rosidl_typesupport_introspection_c.c

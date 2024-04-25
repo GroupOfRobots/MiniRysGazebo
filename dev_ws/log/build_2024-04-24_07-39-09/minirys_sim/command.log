@@ -1,2 +1,0 @@
-Invoking command in '/home/mathew/dev_ws/build/minirys_sim': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/minirys_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/minirys_sim
-Invoked command in '/home/mathew/dev_ws/build/minirys_sim' returned '1': CMAKE_PREFIX_PATH=/opt/ros/humble /usr/bin/cmake /home/mathew/dev_ws/src/minirys_sim -DAMENT_CMAKE_SYMLINK_INSTALL=1 -DCMAKE_INSTALL_PREFIX=/home/mathew/dev_ws/install/minirys_sim

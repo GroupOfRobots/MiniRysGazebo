@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_typesupport_fastrtps_c/minirys_msgs/msg/detail/angular_pose__rosidl_typesupport_fastrtps_c.h

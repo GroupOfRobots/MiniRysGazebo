@@ -1,1 +1,0 @@
-/home/mathew/dev_ws/build/minirys_msgs/rosidl_generator_cpp/minirys_msgs/msg/detail/motor_command__struct.hpp

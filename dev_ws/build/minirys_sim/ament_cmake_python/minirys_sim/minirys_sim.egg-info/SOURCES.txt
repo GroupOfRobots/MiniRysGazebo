@@ -1,6 +1,0 @@
-setup.py
-minirys_sim/__init__.py
-minirys_sim.egg-info/PKG-INFO
-minirys_sim.egg-info/SOURCES.txt
-minirys_sim.egg-info/dependency_links.txt
-minirys_sim.egg-info/top_level.txt
