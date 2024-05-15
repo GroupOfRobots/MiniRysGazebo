@@ -89,8 +89,6 @@ class RelayNode(Node):
             pub = self.create_publisher(Twist, topic_name, 10)
             self.publisher_list[topic_name] = pub
 
-        # self.get_logger().info(f"Robots list: {self.robots}")
-
         if self.mode == 0:
             # Direct Drive mode
             self.create_subscription(Twist, self.group_name, self.relay_callback, 10)
@@ -185,7 +183,6 @@ class RelayNode(Node):
 
         for pub in self.publisher_list.values():
             pub.publish(msg)
-        # print(f"Relayed message to topic(s): {', '.join(self.publisher_list.keys())}", end="", flush=True)
     
     def animation(self, duration):
         for k in range(int(duration)):
@@ -198,7 +195,6 @@ def main(args=None):
 
     node = RelayNode()
     rclpy.spin(node)
-    # node.destroy_node()
 
     rclpy.shutdown()
 

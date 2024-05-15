@@ -169,6 +169,20 @@ class SimulationParameters:
         self.pitch = 0.0
         self.yaw = 1.570796327
 
+        self.camera_enabled = True
+        self.camera_visibility = False
+        self.TOF_enabled = True
+        self.horizontal_sensor_visibility = False
+        self.vertical_sensor_visibility = False
+        self.all_sensor_visibility = False
+
+        self.camera_enabled = True
+        self.camera_visibility = False
+        self.TOF_enabled = True
+        self.horizontal_sensor_visibility = False 
+        self.vertical_sensor_visibility = False
+        self.all_sensor_visibility = False
+
         self.param_to_change = ["wheel_mu1", "wheel_mu2"]
         self.start_from = [1.0, 1.0]
         self.iterate_by = [2.0, 2.0]
@@ -184,7 +198,7 @@ def populate_simulation_options_name_list():
         "randomize_colors": bool,
         "gradient_starting_color": str,
         "gradient_color_step": str,
-        
+    
         "x_separation": float,
         "y_separation": float,
         "z_separation": float,
@@ -198,6 +212,14 @@ def populate_simulation_options_name_list():
         "param_to_change": list,
         "start_from": list,
         "iterate_by": list,
+
+        "camera_enabled": bool,
+        "camera_visibility": bool,
+        
+        "TOF_enabled": bool,
+        "horizontal_sensor_visibility": bool, 
+        "vertical_sensor_visibility": bool,
+        "all_sensor_visibility": bool,
     }
 
     list_value_types = {
@@ -700,7 +722,7 @@ class MainWindow(Gtk.ApplicationWindow):
             
         if button_name == "Save":
             file_path = f"{self.package_path}/config/robots/robots_archive/"
-            print(f"ROBOT INDEX: {robot_index}")
+            print(f"ROBOT INDEX: {robot_index} saved")
             self.create_robot_options_xml(self.robot_params_list[robot_index-1], file_path, robot_index)
 
 
@@ -1632,6 +1654,7 @@ class MainWindow(Gtk.ApplicationWindow):
 
     def on_checkbox_toggled(self, checkbox, data):
         options_data, option_name = data
+        print(f"The {option_name} changed to {options_data}")
         setattr(options_data, option_name, checkbox.get_active())
         
     def on_int_entry_changed(self, entry, data):

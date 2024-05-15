@@ -81,6 +81,8 @@
             <xacro:include filename="chassis.xacro"/>
             <xacro:include filename="wheels.xacro"/>
 
+            <xacro:include filename="imu.xacro"/>
+
             <xacro:if value="$(arg label_enabled)">
                 <xacro:include filename="label.xacro"/>
             </xacro:if>
@@ -92,5 +94,5 @@
             <xacro:if value="$(arg camera_enabled)">
                 <xacro:include filename="camera.xacro"/>
             </xacro:if>
-
+            
 </robot>

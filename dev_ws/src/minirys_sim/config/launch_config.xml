@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <spawn_modes>
     <spawn_parameters mode="row_spawn_parameters">
-        <robots_number>3</robots_number>
+        <robots_number>2</robots_number>
         <number_of_rows>1</number_of_rows>
         <gazebo_world>empty.world</gazebo_world>
         <use_gradient_color>False</use_gradient_color>
@@ -17,14 +17,35 @@
         <roll>0.0</roll>
         <pitch>0.04</pitch>
         <yaw>1.570796327</yaw>
+        <camera_enabled>True</camera_enabled>
+        <camera_visibility>False</camera_visibility>
+        <TOF_enabled>True</TOF_enabled>
+        <horizontal_sensor_visibility>False</horizontal_sensor_visibility> 
+        <vertical_sensor_visibility>False</vertical_sensor_visibility>
+        <all_sensor_visibility>False</all_sensor_visibility>
     </spawn_parameters>
     <param_to_change>
 
+    <value>wheel_mu1</value>
+        <value>wheel_mu2</value>
+        <value>chassis_mx</value>
+        <value>chassis_my</value>
+        <value>chassis_mz</value>
     </param_to_change>
     <start_from>
 
+    <value>20.0</value>
+        <value>20.0</value>
+        <value>0.0</value>
+        <value>0.0</value>
+        <value>0.015152</value>
     </start_from>
     <iterate_by>
 
+    <value>0.0</value>
+        <value>0.0</value>
+        <value>0.0</value>
+        <value>0.0</value>
+        <value>0.002</value>
     </iterate_by>
     </spawn_modes>

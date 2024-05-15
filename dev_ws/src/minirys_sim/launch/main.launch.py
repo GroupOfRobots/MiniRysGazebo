@@ -11,7 +11,7 @@ from PIL import ImageDraw
 from PIL import ImageFont
 from PIL import ImageEnhance
 
-from dataclasses import dataclass
+from dataclasses import dataclass, fields
 from typing import List
 from ament_index_python.packages import get_package_share_directory
 from launch import LaunchDescription
@@ -31,10 +31,10 @@ class RobotParameters:
     label_enabled: str = 'true'
     label_x: str = '0.13'
     label_y: str = '0.05'
-    TOF_enabled: str = 'false'
+    TOF_enabled: str = 'true'
     horizontal_sensor_visibility: str = 'false'
     vertical_sensor_visibility: str = 'false'
-    all_sensor_visibility: str = 'false'
+    all_sensor_visibility: str = 'true'
     TOF_FOV_angle: str = '0.08'
     TOF_range: str = '5'
     spawn_x: str = '-2.0'
@@ -68,6 +68,7 @@ class RobotParameters:
     wheels_iyy: str = '0.00013418'
     wheels_iyz: str = '0.0'
     wheels_izz: str = '0.00026198'
+    
 
 
 @dataclass
@@ -89,6 +90,13 @@ class SpawnParameters:
     roll: float = 0.0
     pitch: float = 0.0
     yaw: float = 1.570796327
+
+    camera_enabled: bool = True
+    camera_visibility: bool = False
+    TOF_enabled: bool = True
+    horizontal_sensor_visibility: bool = False 
+    vertical_sensor_visibility: bool = False
+    all_sensor_visibility: bool = False
 
 
 def generate_label_texture(package_path, robot_params_list, parameters_to_display, values_of_parameters):
@@ -174,6 +182,30 @@ def generate_label_texture(package_path, robot_params_list, parameters_to_displa
                 file.write("        }\n")
                 file.write("    }\n")
                 file.write("}\n")
+
+def update_robot_parameters_from_xml(xml_file_path: str, robot_parameters: RobotParameters):
+    # Update Robot Parameters from XML file path
+
+    tree = ET.parse(xml_file_path)
+    root = tree.getroot()
+
+    def convert_value(field_type, value):
+        if field_type == bool:
+            return value.lower() == 'true'
+        elif field_type == float:
+            return float(value)
+        elif field_type == int:
+            return int(value)
+        else:
+            return value
+    
+    for field in fields(robot_parameters):
+        element = root.find(field.name)
+        if element is not None:
+            setattr(robot_parameters, field.name, convert_value(field.type, element.text))
+
+    print("Parameters updated from XML file.")
+    
 
 def generate_color_names(params: SpawnParameters):
     if params.use_gradient_color and params.randomize_colors:
@@ -271,18 +303,25 @@ def generate_robot_data(package_path, simulation_params: SpawnParameters, param_
             column = 0  # reset the column number
            
         # Generate the parameters for the robot
-        robot_params = RobotParameters(
-                robot_namespace = f"robot{i + 1}",
-                color_code= f"{color_name_list[i % len(color_name_list)]}",
-                spawn_x = f"{simulation_params.x_offset + column * simulation_params.x_separation}",
-                spawn_y = f"{simulation_params.y_offset - row + i * simulation_params.y_separation}",
-                spawn_z = f"{simulation_params.z_offset + i * simulation_params.z_separation}",
-                spawn_roll = f"{simulation_params.roll}",
-                spawn_pitch = f"{simulation_params.pitch}",
-                spawn_yaw = f"{simulation_params.yaw}",
-        )
+        robot_params = RobotParameters()
+        # update_robot_parameters_from_xml(f"{package_path}/config/robot_parameters.xml", robot_params)
 
-        
+        robot_params.robot_namespace = f"robot{i + 1}"
+        robot_params.color_code = f"{color_name_list[i % len(color_name_list)]}"
+        robot_params.spawn_x = f"{simulation_params.x_offset + column * simulation_params.x_separation}"
+        robot_params.spawn_y = f"{simulation_params.y_offset - row + i * simulation_params.y_separation}"
+        robot_params.spawn_z = f"{simulation_params.z_offset + i * simulation_params.z_separation}"
+        robot_params.spawn_roll = f"{simulation_params.roll}"
+        robot_params.spawn_pitch = f"{simulation_params.pitch}"
+        robot_params.spawn_yaw = f"{simulation_params.yaw}"
+        robot_params.camera_enabled = f"{simulation_params.camera_enabled}" 
+        robot_params.camera_visibility = f"{simulation_params.camera_visibility}"
+        robot_params.TOF_enabled = f"{simulation_params.TOF_enabled}"
+        robot_params.horizontal_sensor_visibility = f"{simulation_params.horizontal_sensor_visibility}"
+        robot_params.vertical_sensor_visibility = f"{simulation_params.vertical_sensor_visibility}"
+        robot_params.all_sensor_visibility = f"{simulation_params.all_sensor_visibility}"
+
+      
         new_value_list = []
         print(f"param_to_change: {param_to_change}")
         # If param_to_change and iterate_by and start_from: # if the lists are not empty
@@ -419,6 +458,12 @@ def populate_sim_params(package_path, mode):
     simulation_params.roll = float(spawn_params_elem.find("roll").text)
     simulation_params.pitch = float(spawn_params_elem.find("pitch").text)
     simulation_params.yaw = float(spawn_params_elem.find("yaw").text)
+    simulation_params.camera_enabled = spawn_params_elem.find("camera_enabled").text == "True"
+    simulation_params.camera_visibility = spawn_params_elem.find("camera_visibility").text == "True"
+    simulation_params.TOF_enabled = spawn_params_elem.find("TOF_enabled").text == "True"
+    simulation_params.horizontal_sensor_visibility = spawn_params_elem.find("horizontal_sensor_visibility").text == "True"
+    simulation_params.vertical_sensor_visibility = spawn_params_elem.find("vertical_sensor_visibility").text == "True"
+    simulation_params.all_sensor_visibility = spawn_params_elem.find("all_sensor_visibility").text == "True"
 
     param_to_change = [elem.text for elem in root.find("param_to_change").findall("value")]
     start_from = [float(elem.text) for elem in root.find("start_from").findall("value")]

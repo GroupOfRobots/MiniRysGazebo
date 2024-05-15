@@ -33,11 +33,11 @@ class OdomTranslatorNode(Node):
         super().__init__('odom_translator')
         self.subscription = self.create_subscription(
             Odometry,
-            'odom',
+            'robot1/odom',
             self.odom_callback,
             10
         )
-        self.publisher = self.create_publisher(AngularPose, 'angular_pose', 10)
+        self.publisher = self.create_publisher(AngularPose, 'robot1/internal/angular_pose', 10)
 
     def odom_callback(self, msg):
         angular_pose = AngularPose()

@@ -111,7 +111,7 @@ def launch_setup(context):
     ## Just to check if the parameters are being passed correctly
     # print(chassis_mx.perform(context)) 
     # print(chassis_my.perform(context))
-    # print(chassis_mz.perform(context))
+    # print(f"set to {chassis_mz.perform(context)}")
 
     color_code_R, color_code_G, color_code_B, color_code_A = hex_to_rgba(color_code.perform(context))
     print(f"R:{color_code_R}, G:{color_code_G}, B:{color_code_B}, A:{color_code_A},")
