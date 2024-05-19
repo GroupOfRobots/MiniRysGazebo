@@ -76,7 +76,7 @@ cd src/minirys_sim/APP
 python3 App.py
 ```
 
-## Simulation setup:
+## Simulation setup example:
 
 In the "Simulation parameters" tab (expandable list), you can set the number of robots for the simulation. Then, proceed to the "Robot driver" tab and set up driver groups:
 
