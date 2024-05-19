@@ -87,7 +87,7 @@ In the "Simulation parameters" tab (expandable list), you can set the number of 
 There are three modes of control:
 - Mode 0: (other parameters are ignored) Control the group with a teleop_twist_keyboard controller.
 - Mode 1: Create a sequence of moves. Specify how many loops of the commands the group should perform using the loop field (-1 for infinite). Then, you can add and delete steps.
-- Mode 2: (other parameters are ignored) This mode creates translator nodes for each robot in the group. The robot will listen to the MotorCommand.msg message type published on the /robotX/motor_command (where "X" is the number of the robot) topic and send the AngularPose.msg message type to /robotX/angular_pose topic.
+- Mode 2: (other parameters are ignored) Creates translator nodes for each robot in the group. These nodes replicate the topics that are present on the real robot.
 
 Lastly, click the following buttons:
 - "Run Gazebo"
